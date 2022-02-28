@@ -1,8 +1,7 @@
 <?php get_header() ?>
 <main class="site__main">
-    <h1>------Catégory-cours--------</h1>
+    <h1>Liste des cours du programme TIM</h1>
     <section class="formation">
-        <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>

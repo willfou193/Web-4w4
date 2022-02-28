@@ -2,4 +2,18 @@
     position: relative;
     display: flex;
     background-color: rgba(#000000, 0.1);
+    
+    &__bouton{
+        &:active{
+            cursor: pointer;
+            background-color: rgba(#fff, 0.1);
+        }
+    }
+    &__input{
+        transition: 0.3s ease-in;
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(#fff,0.4);
+        }
+    }
 }

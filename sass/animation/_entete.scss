@@ -17,7 +17,7 @@
         border-radius: 50%;
         color: black;
         transform: translateX(0) translateY(0);
-        animation: animCercle 1s 1s forwards ease-in ;
+        animation: animCercle 1s 1s backwards ease-in ;
     }
 
     // &__bloc:nth-of-type(1){

@@ -1,7 +1,8 @@
 <footer class="site__footer">
-    <h2 class="footer__titre">Le beau footer</h2>
-    <p class="footer__presentation">Un site web fait par un élève du TIM à l'aide de Wordpress.</p>
+    <h2 class="footer__titre">Information supplémentaire</h2>
     <h3 class="footer__author">Fait (en parti) par William Foucher</h3>
+
+    <p class="footer__presentation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eveniet nesciunt cupiditate magnam! Sed et iusto odit perferendis porro delectus! Voluptatem a doloremque quod cumque maxime veniam sequi sed atque?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quae repellendus necessitatibus ullam, error ad incidunt quam animi perspiciatis excepturi obcaecati quo accusamus. Omnis sunt odio officia iste qui accusamus!</p>
     <div class="footer__search">
         <?php get_search_form() ?>
     </div>
@@ -16,6 +17,8 @@ wp_nav_menu(array(
                     "menu_class"=>"site__footer__menu__ul",
 
                     "link_before"=>$icone)); ?>
+<p id="footer__copyright">3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131
+Copyright © 2014 - Collège de Maisonneuve. Tous droits réservés</p>
 </footer>
     <?php wp_footer(); ?>
 </body>

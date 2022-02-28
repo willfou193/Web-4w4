@@ -397,6 +397,52 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__footer .menu-item a {
+  color: white;
+  background-color: #404040;
+}
+
+.site__footer .menu-item a:visited {
+  color: #999999;
+  background-color: black;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: lightseagreen;
+  background-color: white;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
+}
+
+.menu-principal .menu-item a {
+  color: green;
+  background-color: lightGreen;
+}
+
+.menu-principal .menu-item a:visited {
+  color: green;
+  background-color: lightGreen;
+}
+
+.menu-principal .menu-item a:hover, .menu-principal .menu-item a:focus, .menu-principal .menu-item a:active {
+  color: green;
+  background-color: lightGreen;
+}
+
+.menu-principal .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.menu-principal .menu-item a:hover, .menu-principal .menu-item a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -559,12 +605,24 @@ COMPOSANTES
   transform: rotate(0);
 }
 
+@media screen and (min-width: 800px) {
+  #burger {
+    display: none;
+  }
+}
+
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
 }
 
 .menu-principal-container {
   display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-principal-container {
+    display: block;
+  }
 }
 
 #chk-burger:checked ~ .menu-principal-container {
@@ -586,20 +644,6 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #F0B04B;
-}
-
-.menu-item a:hover {
-  background-color: #ffd1d1;
-}
-
-@media screen and (min-width: 800px) {
-  #burger {
-    display: none;
-  }
-  .menu-principal-container {
-    display: block;
-  }
 }
 
 .site__footer {
@@ -647,6 +691,12 @@ section.erreur-404 {
 
 .article__contenu {
   display: flex;
+}
+
+.recherche {
+  position: relative;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* ---------------------------------------------------------

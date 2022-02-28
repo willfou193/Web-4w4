@@ -23,7 +23,40 @@
 		outline: 0;
 	}
 }
+// --------------------------------------------------------
+@mixin links__menu(	$couleur, 
+					$couleur--visited, 
+					$couleur--hover,
+					$background, 
+					$background--visited, 
+					$background--hover)
+{
+	color: $couleur;
+	background-color: $background;
 
+	&:visited {
+		color: $couleur--visited;
+		background-color: $background--visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur--hover;
+		background-color: $background--hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+// ========================================================
 
 a {
 	@include links(	$color__link,
@@ -44,11 +77,10 @@ a {
 }
 
 .site__footer .menu-item a{
-	@include links_menu (
+	@include links__menu(
 	$color__link__footer__menu,
 	$color__link__footer__menu-visited, 
-	$color__link__footer__menu-hover 
-	
+	$color__link__footer__menu-hover,
 	$background__link__footer__menu,
 	$background__link__footer__menu-visited, 
 	$background__link__footer__menu-hover 
@@ -56,11 +88,10 @@ a {
 	)
 }
 .menu-principal .menu-item a{
-	@include links_menu (
+	@include links__menu (
 	$color__link__menu__principal,
 	$color__link__menu__principal-visited, 
-	$color__link__menu__principal-hover 
-	
+	$color__link__menu__principal-hover,
 	$background__link__menu__princiapl,
 	$background__link__menu__princiapl-visited, 
 	$background__link__menu__princiapl-hover 

@@ -2,6 +2,9 @@
     <h2 class="footer__titre">Le beau footer</h2>
     <p class="footer__presentation">Un site web fait par un élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author">Fait (en parti) par William Foucher</h3>
+    <div class="footer__search">
+        <?php get_search_form() ?>
+    </div>
 
 <?php 
 

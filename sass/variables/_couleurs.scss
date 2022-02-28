@@ -27,3 +27,21 @@ $color__font-footer : hsl(0, 0%, 100%);
 $color__link__header : hsl(0, 0%, 100%);
 $color__link__header-hover :  lightseagreen;
 $color__link__header-visited : hsl(0, 0%, 100%);
+
+// ------------------ menu footer 
+$color__link__footer__menu: hsl(0, 0%, 100%);
+$color__link__footer__menu-visited: hsl(0, 0%, 60%); 
+$color__link__footer__menu-hover: lightseagreen;
+
+$background__link__footer__menu: hsl(0, 0%, 25%);
+$background__link__footer__menu-visited: hsl(0, 0%, 0%); 
+$background__link__footer__menu-hover: rgb(255, 255, 255);
+
+// menu principal
+$color__link__menu__principal:hsl(0, 0%, 100%);
+$color__link__menu__principal-visited:hsl(0, 0%, 60%); 
+$color__link__menu__principal-hover: lightseagreen;
+
+$background__link__menu__princiapl:hsl(0, 0%, 25%);
+$background__link__menu__princiapl-visited: hsl(0, 0%, 0%); 
+$background__link__menu__princiapl-hover:hsl(0, 0%, 100%);

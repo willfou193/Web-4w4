@@ -43,3 +43,26 @@ a {
 					$color__link__header-hover );
 }
 
+.site__footer .menu-item a{
+	@include links_menu (
+	$color__link__footer__menu,
+	$color__link__footer__menu-visited, 
+	$color__link__footer__menu-hover 
+	
+	$background__link__footer__menu,
+	$background__link__footer__menu-visited, 
+	$background__link__footer__menu-hover 
+	
+	)
+}
+.menu-principal .menu-item a{
+	@include links_menu (
+	$color__link__menu__principal,
+	$color__link__menu__principal-visited, 
+	$color__link__menu__principal-hover 
+	
+	$background__link__menu__princiapl,
+	$background__link__menu__princiapl-visited, 
+	$background__link__menu__princiapl-hover 
+	)
+}

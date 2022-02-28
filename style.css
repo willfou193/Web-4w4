@@ -635,6 +635,11 @@ COMPOSANTES
   text-align: center;
 }
 
+.footer__search {
+  width: 20%;
+  margin: 0 auto;
+}
+
 section.erreur-404 {
   width: 50%;
   margin: 0 auto;

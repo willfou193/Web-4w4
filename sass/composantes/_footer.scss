@@ -2,7 +2,7 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
-
+    
     &__menu{ // .site__footer__menu
 
       &__ul{ // .site__footer__menu__ul
@@ -20,14 +20,18 @@
               }
             }
           }
+        }
       }
-    }
   }
 .footer__titre,
 .footer__presentation,
 .footer__author {
   color: $color__font-footer;
   text-align: center;
+}
+.footer__search{
+  width: 20%;
+  margin: 0 auto;
 }
 
 

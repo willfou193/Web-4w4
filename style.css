@@ -470,19 +470,87 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #F0B04B;
-  color: white;
-  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.site__header .header__titre {
-  font-size: 3em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+  }
 }
 
-.site__header .header__desc {
-  font-size: 1.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.site__header__titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site__header__titre h1 {
+  padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(2rem, 4vw, 6rem);
+}
+
+.site__header__titre h2 {
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.util {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .util {
+    align-items: flex-end;
+    width: 25%;
+  }
+}
+
+.icone {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+  .icone {
+    display: block;
+    width: auto;
+    margin: 0%;
+  }
+}
+
+.icone__lien {
+  text-decoration: none;
+}
+
+.recherche {
+  position: relative;
+}
+
+.recherche__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+}
+
+.recherche__bouton {
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #burger {
@@ -580,7 +648,7 @@ section.erreur-404 {
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: exercice2 William Foucher
 */
 .site {
   background-color: white;
@@ -609,6 +677,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site {
   display: grid;
+  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }

@@ -21,6 +21,7 @@ function cidw_4w4_filtre_choix_menu($obj_menu){
     //var_dump($obj_menu);
     foreach($obj_menu as $cle => $value)
     {
+        
        // print_r($value);
        //$value->title = substr($value->title,0,7);
        $value->title = wp_trim_words($value->title,3,"...");

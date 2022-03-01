@@ -553,6 +553,7 @@ COMPOSANTES
   .util {
     align-items: flex-end;
     width: 25%;
+    margin-right: 10px;
   }
 }
 
@@ -652,15 +653,36 @@ COMPOSANTES
   padding: 15px;
 }
 
+@media screen and (min-width: 800px) {
+  .site__footer__menu {
+    width: 30%;
+  }
+}
+
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
   flex-flow: wrap;
 }
 
+@media screen and (min-width: 800px) {
+  .site__footer__menu__ul {
+    flex-flow: nowrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .site__footer__menu__ul .menu-item {
   width: 25%;
   margin: 12.5%;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__menu__ul .menu-item {
+    width: 100%;
+    margin: 1em;
+  }
 }
 
 .site__footer__menu__ul .menu-item a {
@@ -699,6 +721,27 @@ COMPOSANTES
 #footer__copyright {
   color: white;
   font-size: 0.7rem;
+}
+
+.footer__conteneur {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__conteneur {
+    flex-direction: row;
+  }
+}
+
+.footer__presentation {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__presentation {
+    width: 30%;
+  }
 }
 
 section.erreur-404 {

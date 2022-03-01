@@ -399,7 +399,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a {
   color: white;
-  background-color: #404040;
+  background-color: black;
 }
 
 .site__footer .menu-item a:visited {
@@ -598,6 +598,11 @@ COMPOSANTES
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.menu .menu-item a {
+  display: flex;
+  align-items: center;
 }
 
 #burger {

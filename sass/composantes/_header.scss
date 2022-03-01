@@ -11,13 +11,19 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      
       h1{
           padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
           font-size: clamp(2rem, 4vw, 6rem);
+          color: $color__link;
       }
       h2{
           font-size: clamp(1rem, 2vw, 3rem);
+          color: $color__link;
       }
+  }
+  &__titre a{
+      text-decoration: none;
   }
 }
 .util{

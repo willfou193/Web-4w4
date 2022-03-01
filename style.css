@@ -409,7 +409,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
   color: lightseagreen;
-  background-color: white;
+  background-color: black;
 }
 
 .site__footer .menu-item a:focus {
@@ -537,10 +537,16 @@ COMPOSANTES
 .site__header__titre h1 {
   padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
   font-size: clamp(2rem, 4vw, 6rem);
+  color: black;
 }
 
 .site__header__titre h2 {
   font-size: clamp(1rem, 2vw, 3rem);
+  color: black;
+}
+
+.site__header__titre a {
+  text-decoration: none;
 }
 
 .util {

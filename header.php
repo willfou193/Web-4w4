@@ -10,8 +10,16 @@
 <body <?php body_class('site'); ?>>
 <header class="site__header">
     <section class="site__header__titre">
-        <a href=" <?php echo get_permalink(); ?>"><h1><?php echo get_bloginfo(); ?></h1></a>
-        <a href=" <?php echo get_permalink(); ?>"><h2> <?php echo get_bloginfo('description'); ?></h2></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
+            <h1>
+                <?php bloginfo('name'); ?>
+            </h1>
+        </a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
+            <h2>
+                <?php echo get_bloginfo('description'); ?>
+            </h2>
+        </a>
         
     </section>
     <section class="util">

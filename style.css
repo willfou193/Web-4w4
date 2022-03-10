@@ -623,6 +623,10 @@ COMPOSANTES
   }
 }
 
+#chk-burger {
+  display: none;
+}
+
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
 }

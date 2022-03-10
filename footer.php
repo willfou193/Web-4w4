@@ -1,6 +1,7 @@
 <footer class="site__footer">
     <h2 class="footer__titre">Information supplémentaire</h2>
     <h3 class="footer__author">Fait (en parti) par William Foucher</h3>
+    <!-- premier groupe de colonne (desktop) -->
     <div class="footer__conteneur">
         <p class="footer__presentation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eveniet nesciunt cupiditate magnam! Sed et iusto odit perferendis porro delectus! Voluptatem a doloremque quod cumque maxime veniam sequi sed atque?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quae repellendus necessitatibus ullam, error ad incidunt quam animi perspiciatis excepturi obcaecati quo accusamus. Omnis sunt odio officia iste qui accusamus!</p>
         <div class="footer__search">
@@ -18,8 +19,15 @@
                                 "link_before"=>$icone)); 
         ?>
     </div>
-<p id="footer__copyright">3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131
-Copyright © 2014 - Collège de Maisonneuve. Tous droits réservés</p>
+    <!-- autres rangées -->
+    <div class="lien-externe">
+        <?php
+            wp_nav_menu(array(
+                "menu"=>"externe"));
+        ?>
+    </div>
+    <p id="footer__copyright">3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131
+    Copyright © 2014 - Collège de Maisonneuve. Tous droits réservés</p>
 </footer>
     <?php wp_footer(); ?>
 </body>

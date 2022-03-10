@@ -358,11 +358,11 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: black;
+  color: white;
 }
 
 .site__footer a:visited {
-  color: black;
+  color: #999999;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -668,10 +668,8 @@ COMPOSANTES
   padding: 15px;
 }
 
-@media screen and (min-width: 800px) {
-  .site__footer__menu {
-    width: 30%;
-  }
+.site__footer__menu {
+  padding: 0px;
 }
 
 .site__footer__menu__ul {
@@ -722,22 +720,6 @@ COMPOSANTES
   text-align: center;
 }
 
-.footer__search {
-  width: 90%;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 800px) {
-  .footer__search {
-    width: 20%;
-  }
-}
-
-#footer__copyright {
-  color: white;
-  font-size: 0.7rem;
-}
-
 .footer__conteneur {
   display: flex;
   flex-direction: column;
@@ -749,14 +731,47 @@ COMPOSANTES
   }
 }
 
-.footer__presentation {
-  width: 100%;
+.footer__search {
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 800px) {
-  .footer__presentation {
+  .footer__search {
     width: 30%;
   }
+}
+
+.footer__widget {
+  width: 30%;
+}
+
+.footer__page {
+  width: 30%;
+}
+
+#footer__copyright {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.footer__conteneur2 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__conteneur2 {
+    flex-direction: row;
+  }
+}
+
+.lien-externe {
+  width: 30%;
+}
+
+.lien-externe a {
+  width: 50%;
 }
 
 section.erreur-404 {
@@ -801,6 +816,20 @@ theme name: exercice2 William Foucher
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #66adff;
+  clip-path: circle(50% at 50% 50%);
+  z-index: -1;
+}
+
 .site__header {
   grid-area: header;
   background-color: #F0B04B;
@@ -813,7 +842,7 @@ theme name: exercice2 William Foucher
 
 .site__main {
   grid-area: main;
-  background-color: #A6D5FF;
+  background-color: rgba(166, 213, 255, 0.5);
 }
 
 .site__footer {

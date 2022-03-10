@@ -32,7 +32,14 @@ function cidw_4w4_filtre_choix_menu($obj_menu){
 }
 add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu");
 // ---------------------------------------------------------------------add_theme support()
-add_theme_support( 'post-thumbnails' );
+function cidw_4w4_add_theme_support(){
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'custom-logo', array(
+        'height' => 100,
+        'width'  => 100,
+    ) );
+}
+    add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support');
 
 
 // -------------------------------------------------------------------Enregistrement
@@ -43,6 +50,39 @@ function my_register_sidebars() {
         array(
             'id'            => 'footer_colonne1',
             'name'          => __( 'Footer colonne1' ),
+            'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'footer_colonne2',
+            'name'          => __( 'Footer colonne2' ),
+            'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'footer_colonne3',
+            'name'          => __( 'Footer colonne3' ),
+            'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'footer_ligne1',
+            'name'          => __( 'Footer ligne1' ),
             'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',

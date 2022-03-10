@@ -10,6 +10,7 @@
 <body <?php body_class('site'); ?>>
 <header class="site__header">
     <section class="site__header__titre">
+        <?php echo get_custom_logo(); ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
             <h1>
                 <?php bloginfo('name'); ?>
@@ -53,6 +54,9 @@
     </label>
     <?php 
     $iconeMenu = '<svg class="iconeMenu" width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" color="#000000" viewBox="0 0 24 24"><polygon fill-rule="evenodd" points="8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4"></polygon></svg>';
-    wp_nav_menu(array("principal", 'link_before' => "$iconeMenu")); ?>
+   wp_nav_menu(array("menu"=>"principal", 'link_before' => "$iconeMenu"));
+  
+   
+   ?>
     
 </section>

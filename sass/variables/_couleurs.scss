@@ -1,5 +1,6 @@
 /* ---------------- BACKGROUND */
 $color__background-body : hsl(0, 0%, 100%);
+$color__background-body-clip : hsl(212, 100%, 70%);
 $color__background-main : #A6D5FF;
 $color__background-cours : hsl(7, 100%, 91%);
 $color__background-header : #F0B04B;
@@ -13,9 +14,9 @@ $color__link : hsl(0, 0%, 0%);
 $color__link-hover : lightseagreen;
 $color__link-visited : hsl(0, 0%, 0%);
 /* ---------------- LIENS FOOTER */
-$color__link__footer : hsl(0, 0%, 0%);
+$color__link__footer : hsl(0, 0%, 100%);
 $color__link__footer-hover : lightseagreen;
-$color__link__footer-visited : hsl(0, 0%, 0%);
+$color__link__footer-visited : hsl(0, 0%, 60%); 
 
 
 /* ---------------- FONT */

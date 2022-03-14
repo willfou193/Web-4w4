@@ -61,19 +61,16 @@
 }
 .footer__widget{
   width: 30%;
+      & ul{
+        padding-left: 1rem;
+      }
 }
 .footer__page{
   width: 30%;
 }
-// --------------------------------------------------------------------Sous le conteneur
 
-
-#footer__copyright{
-  color:$color__font-footer;
-  font-size: 0.7rem;
-}
 // --------------------------------------------------------------------conteneur2
-.footer__conteneur2{
+.footer__conteneur__2{
   display: flex;
   flex-direction: column;
   @media screen and (min-width : $largeur__media--tablette){
@@ -82,10 +79,21 @@
 }
 // ---------------------------------------------------------------------colonne conteneur2
 .lien-externe{
-  width: 30%;
+  width: 40%;
           
           & a{
             width: 50%;
           }
+}
+
+// --------------------------------------------------------------------Sous les conteneur
+.reseau{
+  margin: 0 auto;
+  width: 50%;
+}
+
+#footer__copyright{
+  color:$color__font-footer;
+  font-size: 0.7rem;
 }
 

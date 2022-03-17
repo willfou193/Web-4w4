@@ -7,21 +7,6 @@ theme name: exercice2 William Foucher
     background-color: $color__background-body;
     font-family: $font__main;
 }
-
-// .home::after{
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     bottom: 0;
-//     right: 0;
-//     left: 0;
-//     background-color: $color__background-body-clip;
-//     clip-path: circle(50% at 50% 50%);
-//     z-index: -1;
-// }
-
 .site__header{
     grid-area: header;  
     background-color: $color__background-header;
@@ -36,9 +21,9 @@ theme name: exercice2 William Foucher
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: $color__background-body-clip;
     clip-path: polygon(59% 0, 100% 0%, 100% 72%, 29% 72%);
     z-index: 1;
+    opacity: 0.5;
     
 }
 

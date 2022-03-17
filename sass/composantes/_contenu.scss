@@ -59,3 +59,23 @@
 .cours__description {
     font-size: 1rem;
 }
+.animation__bloc{
+    background-image: url(https://www.cmaisonneuve.qc.ca/wp-content/uploads/2020/06/favicon-cm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 0px 10px 24px 3px #F0B04B; 
+    box-shadow: 0px 10px 24px 3px #F0B04B;
+}
+#etudiant{
+    background-image: url(https://www.td.com/ca/fr/services-bancaires-personnels/images/15.1-student_lineof_credit_benefits-mb_tcm343-299184.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cours{
+    background-image: url(https://www.radiogaspesie.ca/wp-content/uploads/livres-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.animation{
+    margin: 0 auto;
+}

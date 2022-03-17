@@ -489,7 +489,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #eec37d;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -525,6 +525,29 @@ COMPOSANTES
 
 .cours__description {
   font-size: 1rem;
+}
+
+.animation__bloc {
+  background-image: url(https://www.cmaisonneuve.qc.ca/wp-content/uploads/2020/06/favicon-cm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 24px 3px #F0B04B;
+}
+
+#etudiant {
+  background-image: url(https://www.td.com/ca/fr/services-bancaires-personnels/images/15.1-student_lineof_credit_benefits-mb_tcm343-299184.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cours {
+  background-image: url(https://www.radiogaspesie.ca/wp-content/uploads/livres-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animation {
+  margin: 0 auto;
 }
 
 .site__header {
@@ -565,7 +588,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media screen and (min-width: 800px) {
@@ -611,9 +634,14 @@ div.icone ul {
   justify-content: center;
 }
 
+.menu .menu-item {
+  margin-bottom: 1rem;
+}
+
 .menu .menu-item a {
   display: flex;
   align-items: center;
+  font-size: 1.2em;
 }
 
 #burger {
@@ -849,9 +877,9 @@ theme name: exercice2 William Foucher
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #66adff;
   clip-path: polygon(59% 0, 100% 0%, 100% 72%, 29% 72%);
   z-index: 1;
+  opacity: 0.5;
 }
 
 .site__barre {
@@ -912,15 +940,43 @@ ANIMATION
   border-radius: 50%;
   color: black;
   transform: translateX(0) translateY(0);
-  animation: animCercle 1s 1s backwards ease-in;
+  animation: animCercle 1s 1s backwards ease-out;
+}
+
+.formation__cours:hover {
+  transform: scale(1.05);
+  animation-name: animBackground;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes animCercle {
   0% {
     transform: translateY(-100vw);
   }
+  50% {
+    transform: translateY(20vw);
+  }
+  75% {
+    transform: translateY(-20vw);
+  }
   100% {
     transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes animBackground {
+  0% {
+    box-shadow: 0px 10px 24px 3px #F0F0F0;
+  }
+  25% {
+    box-shadow: 0px 10px 24px 3px #222EF0;
+  }
+  50% {
+    box-shadow: 0px 10px 24px 3px #F07F7F;
+  }
+  75% {
+    box-shadow: 0px 10px 24px 3px #000000;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -48,6 +48,7 @@
 .footer__conteneur{
   display: flex;
   flex-direction: column;
+  color: $color__font-footer;
   @media screen and (min-width : $largeur__media--tablette){
     flex-direction: row ;
   }
@@ -62,12 +63,15 @@
 }
 .footer__widget{
   width: 30%;
+  text-align: center;
       & ul{
         padding-left: 1rem;
       }
 }
 .footer__page{
   width: 30%;
+  text-align: center;
+  color: $color__font-footer;
 }
 
 // --------------------------------------------------------------------conteneur2
@@ -81,9 +85,20 @@
 // ---------------------------------------------------------------------colonne conteneur2
 .lien-externe{
   width: 40%;
-          
-          & a{
+  margin: 0px;
+  text-align: center;
+          & li {
             width: 50%;
+            margin: 2em auto;
+          }
+          & a{
+            width: 100%;
+            justify-content: center;
+          }
+          & h2{
+            color: $color__font-footer;
+            text-align: center;
+            
           }
 }
 

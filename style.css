@@ -608,10 +608,6 @@ div.icone ul {
   gap: 0em;
 }
 
-.site__barre {
-  border: black solid 2px;
-}
-
 .recherche {
   margin-bottom: 3px;
   position: relative;
@@ -761,6 +757,7 @@ div.icone ul {
 .footer__conteneur {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 @media screen and (min-width: 800px) {
@@ -782,6 +779,7 @@ div.icone ul {
 
 .footer__widget {
   width: 30%;
+  text-align: center;
 }
 
 .footer__widget ul {
@@ -790,6 +788,8 @@ div.icone ul {
 
 .footer__page {
   width: 30%;
+  text-align: center;
+  color: white;
 }
 
 .footer__conteneur__2 {
@@ -805,10 +805,23 @@ div.icone ul {
 
 .lien-externe {
   width: 40%;
+  margin: 0px;
+  text-align: center;
+}
+
+.lien-externe li {
+  width: 50%;
+  margin: 2em auto;
 }
 
 .lien-externe a {
-  width: 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+.lien-externe h2 {
+  color: white;
+  text-align: center;
 }
 
 .reseau {
@@ -965,7 +978,7 @@ ANIMATION
 
 .site__header__titre h2 {
   animation-name: descriptionApparition;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-timing-function: ease-in;
 }
 
@@ -1009,11 +1022,23 @@ ANIMATION
   30% {
     transform: translateY(8vh);
   }
-  70% {
+  80% {
     transform: translateY(15vh);
   }
   100% {
     transform: translateY(0vh);
+  }
+}
+
+@keyframes descriptionApparition {
+  0% {
+    transform: translateX(100vh);
+  }
+  90% {
+    transform: translateX(100vh);
+  }
+  100% {
+    transform: translateX(0vh);
   }
 }
 /*# sourceMappingURL=style.css.map */

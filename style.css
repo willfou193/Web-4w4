@@ -563,26 +563,12 @@ COMPOSANTES
   }
 }
 
-.icone {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
-
-@media screen and (min-width: 800px) {
-  .icone {
-    display: block;
-    width: auto;
-    margin: 0%;
-  }
-}
-
-.icone__lien {
-  text-decoration: none;
+div.icone ul {
+  justify-content: space-around;
 }
 
 .recherche {
+  margin-bottom: 3px;
   position: relative;
 }
 
@@ -590,7 +576,7 @@ COMPOSANTES
   width: 100%;
   border: none;
   outline: none;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .recherche__bouton {
@@ -598,8 +584,8 @@ COMPOSANTES
   right: 0;
   border: none;
   outline: none;
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -680,9 +666,10 @@ COMPOSANTES
 
 @media screen and (min-width: 800px) {
   .site__footer__menu__ul {
-    flex-flow: nowrap;
+    flex-flow: wrap;
     flex-direction: column;
-    width: 100%;
+    width: 40%;
+    height: 16rem;
   }
 }
 
@@ -855,7 +842,7 @@ theme name: exercice2 William Foucher
 
 .site__main {
   grid-area: main;
-  background-color: rgba(166, 213, 255, 0.5);
+  background-color: #a6d5ff;
 }
 
 .site__footer {

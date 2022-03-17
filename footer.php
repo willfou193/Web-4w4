@@ -27,7 +27,7 @@
     <!-- autres rangées -->
     <div class="footer__conteneur__2">
         <div class="footer__widget">
-                <?php dynamic_sidebar( 'footer_colonne2' ); ?>
+                <?php dynamic_sidebar( 'footer_conteneur2_colonne1' ); ?>
         </div>
         <div class="lien-externe">
             <?php

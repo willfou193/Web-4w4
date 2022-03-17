@@ -10,9 +10,10 @@
           list-style-type: none;
           flex-flow:wrap;
           @media screen and (min-width : $largeur__media--tablette){
-            flex-flow: nowrap;
+            flex-flow: wrap;
             flex-direction: column;
-            width: 100%;
+            width: 40%;
+            height: 16rem;
           }
           .menu-item{ // .site__footer__menu__ul .menu-item
               width: 25%;

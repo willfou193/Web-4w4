@@ -51,6 +51,17 @@ function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
     register_sidebar(
         array(
+            'id'            => 'entete_1',
+            'name'          => __( 'entete 1' ),
+            'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
             'id'            => 'footer_colonne1',
             'name'          => __( 'Footer colonne1' ),
             'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page.' ),
@@ -62,8 +73,8 @@ function my_register_sidebars() {
     );
     register_sidebar(
         array(
-            'id'            => 'footer_colonne2',
-            'name'          => __( 'Footer colonne2' ),
+            'id'            => 'footer_conteneur2_colonne1',
+            'name'          => __( 'Footer conteneur 2 colonne 1' ),
             'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',

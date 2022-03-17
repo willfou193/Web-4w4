@@ -9,6 +9,7 @@
 </head>
 <body <?php body_class('site'); ?>>
 <header class="site__header">
+ 
     <section class="site__header__titre">
         <?= get_custom_logo(); ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    

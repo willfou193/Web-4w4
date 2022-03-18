@@ -5,21 +5,26 @@
     
     &__menu{ // .site__footer__menu
       padding: 0px;
+      width: 100%;
+      margin: 0%;
       &__ul{ // .site__footer__menu__ul
           display : flex;
           list-style-type: none;
+          flex-direction: row;
           flex-flow:wrap;
+          justify-content: center;
           @media screen and (min-width : $largeur__media--tablette){
+            justify-content: flex-start;
             flex-flow: wrap;
             flex-direction: column;
-            width: 40%;
+            width: 100%;
             height: 16rem;
           }
           .menu-item{ // .site__footer__menu__ul .menu-item
-              width: 25%;
-              margin: 12.5%;
+              width: 33%;
+              
               @media screen and (min-width : $largeur__media--tablette){
-                width: 100%;
+                width: 50%;
                 margin: 1em;
               }
             a{ // .site__footer__menu__ul .menu-item a
@@ -55,23 +60,39 @@
 }
 // --------------------------------------------------------------------Colonne conteneur
 .footer__search{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   @media screen and (min-width : $largeur__media--tablette){
     width: 30%;
+    margin: 2em auto 0 auto;
   }
 }
 .footer__widget{
-  width: 30%;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+  @media screen and (min-width : $largeur__media--tablette){
+    width: 30%;
+    
       & ul{
         padding-left: 1rem;
       }
+  }
 }
 .footer__page{
-  width: 30%;
+  width: 100%;
   text-align: center;
-  color: $color__font-footer;
+  @media screen and (min-width : $largeur__media--tablette){
+    width: 30%;
+    text-align: center;
+    color: $color__font-footer;
+        &__menu__ul{
+          & li{
+            width: 50%;
+          }
+        }
+  }
+  
 }
 
 // --------------------------------------------------------------------conteneur2
@@ -84,28 +105,39 @@
 }
 // ---------------------------------------------------------------------colonne conteneur2
 .lien-externe{
-  width: 40%;
-  margin: 0px;
-  text-align: center;
-          & li {
-            width: 50%;
-            margin: 2em auto;
-          }
-          & a{
-            width: 100%;
-            justify-content: center;
-          }
-          & h2{
-            color: $color__font-footer;
-            text-align: center;
-            
-          }
+    margin: 0 auto;
+      & h2{
+        color: $color__font-footer;
+        text-align: center;
+      }
+      
+      svg { // .site__footer__menu__ul .menu-item a svg
+        color: $color__background-header;
+      }
+    @media screen and (min-width : $largeur__media--tablette){
+      width: 40%;
+      margin: 0px;
+      text-align: center;
+        & li {
+          width: 50%;
+          margin: 2em auto;
+        }
+        & a{
+          width: 100%;
+          justify-content: center;
+        }
+      }
+          
 }
 
 // --------------------------------------------------------------------Sous les conteneur
 .reseau{
-  margin: 0 auto;
-  width: 50%;
+  width: 100%;
+  @media screen and (min-width : $largeur__media--tablette){
+    margin: 0 auto;
+    width: 50%;
+  }
+
 }
 
 #footer__copyright{

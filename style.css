@@ -703,31 +703,35 @@ div.icone ul {
 
 .site__footer__menu {
   padding: 0px;
+  width: 100%;
+  margin: 0%;
 }
 
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
+  flex-direction: row;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
   .site__footer__menu__ul {
+    justify-content: flex-start;
     flex-flow: wrap;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
     height: 16rem;
   }
 }
 
 .site__footer__menu__ul .menu-item {
-  width: 25%;
-  margin: 12.5%;
+  width: 33%;
 }
 
 @media screen and (min-width: 800px) {
   .site__footer__menu__ul .menu-item {
-    width: 100%;
+    width: 50%;
     margin: 1em;
   }
 }
@@ -767,29 +771,46 @@ div.icone ul {
 }
 
 .footer__search {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 800px) {
   .footer__search {
     width: 30%;
+    margin: 2em auto 0 auto;
   }
 }
 
 .footer__widget {
-  width: 30%;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.footer__widget ul {
-  padding-left: 1rem;
+@media screen and (min-width: 800px) {
+  .footer__widget {
+    width: 30%;
+  }
+  .footer__widget ul {
+    padding-left: 1rem;
+  }
 }
 
 .footer__page {
-  width: 30%;
+  width: 100%;
   text-align: center;
-  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__page {
+    width: 30%;
+    text-align: center;
+    color: white;
+  }
+  .footer__page__menu__ul li {
+    width: 50%;
+  }
 }
 
 .footer__conteneur__2 {
@@ -804,19 +825,7 @@ div.icone ul {
 }
 
 .lien-externe {
-  width: 40%;
-  margin: 0px;
-  text-align: center;
-}
-
-.lien-externe li {
-  width: 50%;
-  margin: 2em auto;
-}
-
-.lien-externe a {
-  width: 100%;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .lien-externe h2 {
@@ -824,9 +833,35 @@ div.icone ul {
   text-align: center;
 }
 
+.lien-externe svg {
+  color: #F0B04B;
+}
+
+@media screen and (min-width: 800px) {
+  .lien-externe {
+    width: 40%;
+    margin: 0px;
+    text-align: center;
+  }
+  .lien-externe li {
+    width: 50%;
+    margin: 2em auto;
+  }
+  .lien-externe a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .reseau {
-  margin: 0 auto;
-  width: 50%;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .reseau {
+    margin: 0 auto;
+    width: 50%;
+  }
 }
 
 #footer__copyright {
@@ -937,6 +972,7 @@ theme name: exercice2 William Foucher
 ANIMATION
 --------------------------------------------------------- */
 .animation {
+  /* page d'accueil*/
   display: none;
 }
 

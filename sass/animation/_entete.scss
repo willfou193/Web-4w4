@@ -1,4 +1,4 @@
-.animation{
+.animation{ /* page d'accueil*/
     display: none;
     @media screen and (min-width : $largeur__media--tablette){
         display: flex;
@@ -27,7 +27,7 @@
     animation-iteration-count: infinite;
     
 }
-
+// éléments du titre
 .site__header__titre h1{
     animation-name: titreApparition;
     animation-duration: 5s;

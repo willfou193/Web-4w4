@@ -26,7 +26,7 @@
       text-decoration: none;
   }
 }
-
+// section qui englobe les icones--------------------------------------------------------
 .util{
   display: flex;
   flex-direction: column;
@@ -48,6 +48,7 @@ div.icone{
         gap: 0em;
     }
 }
+//  barre de recherche-----------------------------------------------------
 .recherche{
     margin-bottom: 3px;
     position: relative;
@@ -72,7 +73,7 @@ div.icone{
             justify-content: center;
         }
 }
-
+// sidebare ----------------------------------------------------------
 .menu .menu-item{
     margin-bottom: 1rem;
     & a{

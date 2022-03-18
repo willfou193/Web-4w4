@@ -646,6 +646,8 @@ div.icone ul {
 
 #burger {
   position: absolute;
+  right: 20px;
+  top: 30px;
   transition: transform .3s;
   transform: rotate(0);
 }
@@ -956,7 +958,7 @@ theme name: exercice2 William Foucher
 
 .site {
   display: grid;
-  gap: 10px;
+  gap: 0px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
@@ -964,6 +966,7 @@ theme name: exercice2 William Foucher
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
+    gap: 10px;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }

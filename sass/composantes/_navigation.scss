@@ -1,6 +1,8 @@
 
 #burger {
     position : absolute;
+    right: 20px;
+    top: 30px;
     transition : transform .3s;
     transform : rotate(0);
     @media screen and (min-width : $largeur__media--tablette){

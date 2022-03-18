@@ -1,6 +1,6 @@
 <footer class="site__footer">
     <h2 class="footer__titre">Information supplémentaire</h2>
-    <h3 class="footer__author">Fait (en parti) par William Foucher</h3>
+    <h3 class="footer__author">Site fait par William Foucher</h3>
     <!-- premier groupe de colonne (desktop) -->
     <div class="footer__conteneur">
         

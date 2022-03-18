@@ -4,7 +4,7 @@
         display: flex;
         width: 90%;
         margin-bottom: 1rem;
-        justify-content: space-around;
+        justify-content: center;
     }
     &__bloc{
         display: flex;
@@ -19,6 +19,10 @@
         transform: translateX(0) translateY(0);
         animation: animCercle 1s 1s backwards ease-out ;
     }
+}
+.animation div:nth-child(2){
+    margin-right:clamp(15%, 10em, 30%);
+    margin-left:clamp(15%, 10em, 30%);
 }
 .formation__cours:hover{
     transform: scale(1.05);

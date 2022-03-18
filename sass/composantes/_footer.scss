@@ -60,20 +60,15 @@
 }
 // --------------------------------------------------------------------Colonne conteneur
 .footer__search{
-  width: 100%;
-  margin: 0 auto;
+  @include conteneurFlexCol;
   @media screen and (min-width : $largeur__media--tablette){
-    width: 30%;
     margin: 2em auto 0 auto;
   }
 }
 .footer__widget{
-  width: 100%;
-  margin: 0 auto;
+  @include conteneurFlexCol;
   text-align: center;
   @media screen and (min-width : $largeur__media--tablette){
-    width: 30%;
-    
       & ul{
         padding-left: 1rem;
       }

@@ -780,6 +780,11 @@ div.icone ul {
 @media screen and (min-width: 800px) {
   .footer__search {
     width: 30%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer__search {
     margin: 2em auto 0 auto;
   }
 }
@@ -794,6 +799,9 @@ div.icone ul {
   .footer__widget {
     width: 30%;
   }
+}
+
+@media screen and (min-width: 800px) {
   .footer__widget ul {
     padding-left: 1rem;
   }
@@ -1003,8 +1011,8 @@ ANIMATION
 }
 
 .animation div:nth-child(2) {
-  margin-right: clamp(15%, 10em, 30%);
-  margin-left: clamp(15%, 10em, 30%);
+  margin-right: clamp(15%, 30%, 60%);
+  margin-left: clamp(15%, 30%, 60%);
 }
 
 .formation__cours:hover {

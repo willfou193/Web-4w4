@@ -21,8 +21,8 @@
     }
 }
 .animation div:nth-child(2){
-    margin-right:clamp(15%, 10em, 30%);
-    margin-left:clamp(15%, 10em, 30%);
+    margin-right:clamp(15%, 30%, 60%);
+    margin-left:clamp(15%, 30%, 60%);
 }
 .formation__cours:hover{
     transform: scale(1.05);

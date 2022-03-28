@@ -1,0 +1,22 @@
+.menu-categorie_cours-container{
+    width: 80%;
+    margin: 0 auto 2em auto;
+    .menu{ //ul
+        display: flex;
+        justify-content: space-between;
+       
+        .menu-item { //li
+            background-color: $color__bouton__background;
+            a{
+                color: $color__bouton__color;
+                
+            }
+            &:hover{
+                background-color: $color__bouton__background--hover;
+                a{
+                    color: $color__bouton__color--hover;
+                }
+            }
+        }
+    }
+}

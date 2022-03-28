@@ -30,6 +30,7 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balises";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -37,9 +38,9 @@ COMPOSANTES
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation-filtre";
 @import "composantes/footer";
 @import "composantes/404";
-@import "composantes/cours";
 @import "composantes/recherche";
 /* ---------------------------------------------------------
 LAYOUT

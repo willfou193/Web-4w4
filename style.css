@@ -455,6 +455,34 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Merriweather", serif;
+}
+
+h3, h4, h5 {
+  font-family: "Rubik", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -486,6 +514,14 @@ COMPOSANTES
 .formation__liste {
   display: flex;
   flex-wrap: wrap;
+}
+
+.formation__liste .web {
+  background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position-x: 95%;
+  background-position-y: 15%;
 }
 
 .formation__cours {
@@ -573,6 +609,7 @@ COMPOSANTES
   padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
   font-size: clamp(2rem, 4vw, 6rem);
   color: black;
+  font-family: "Merriweather", serif;
 }
 
 .site__header__titre h2 {
@@ -695,6 +732,32 @@ div.icone ul {
   display: block;
   text-decoration: none;
   padding: 4px;
+}
+
+.menu-categorie_cours-container {
+  width: 80%;
+  margin: 0 auto 2em auto;
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  background-color: #F0B04B;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: black;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #eec37d;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: lightseagreen;
 }
 
 .site__footer {
@@ -884,12 +947,6 @@ section.erreur-404 {
   margin: 0 auto;
 }
 
-.article__contenu {
-  width: 95%;
-  display: flex;
-  margin: 0 auto;
-}
-
 .recherche {
   position: relative;
   display: flex;
@@ -922,7 +979,7 @@ theme name: exercice2 William Foucher
 */
 .site {
   background-color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
 }
 
 .site__header {

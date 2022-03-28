@@ -2,10 +2,21 @@
 <main class="site__main">
     <h1>Liste des cours du programme TIM</h1>
     <section class="formation">
+        <?php
+            wp_nav_menu(array(
+                "menu"=>"categorie_cours"
+            ));
+        ?>  
+        
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <article class="formation__cours">
+                <?php
+                $categories = get_the_category();
+                //var_dump($categories);    
+                //echo $categories[1]->slug;
+                ?>
+                <article class="formation__cours <?php echo $categories[1]->slug; ?>">
                         <?php
                         $titre = get_the_title();
                         $titreFiltreCours = substr($titre, 7, -6);

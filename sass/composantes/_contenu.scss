@@ -24,7 +24,19 @@
     &__liste {
         display: flex;
         flex-wrap: wrap;
-    }
+        .web{
+            background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position-x: 95%;
+            background-position-y: 15%;
+        }
+        .jeu{}
+        .design{}
+        .utilitaire{}
+        .video{}
+        .creation-3d{}
+        }
     
     &__cours {
         background-color: $color__background-cours;

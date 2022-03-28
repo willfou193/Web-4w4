@@ -1,0 +1,137 @@
+[33mcommit 3fca33ad6406d4a4e8283f9e8ccdf6ecf005c3b4[m[33m ([m[1;36mHEAD -> [m[1;32mtp1[m[33m, [m[1;31morigin/tp1[m[33m)[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Fri Mar 18 17:38:49 2022 -0400
+
+    ajout du mixin conteneurFlexCol
+
+[33mcommit 7412da65e3f04dbe630a30c0bd5cebf35928a566[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Fri Mar 18 17:10:36 2022 -0400
+
+    animation front page adaptatif
+
+[33mcommit 43470f625fd8ebfc755b9b2dcf2646289a6b75f3[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Fri Mar 18 16:11:55 2022 -0400
+
+    dernier correctif mode mobile
+
+[33mcommit a7084693e9372f1f178daa85f65a2147dce1f26a[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Fri Mar 18 13:41:38 2022 -0400
+
+    fin adaptatif footer
+
+[33mcommit 7cf02a6f3d1d5f99e3ade8bd629482f1e2bdb98e[m
+Author: William Foucher <e1938665@cmaisonneuve.qc.ca>
+Date:   Thu Mar 17 22:37:44 2022 -0400
+
+    semaine 8 c2,  commentaires
+
+[33mcommit 1f293cd908c76fea4bc0ed3dddcd956a374b1152[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 17 19:37:53 2022 -0400
+
+    semaine 8 c2 tard, footer presque finis, reste à finir le mode mobile
+
+[33mcommit 66921c7a16e193a9aff505f8d303e28bf834b584[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 17 19:08:30 2022 -0400
+
+    semaine 8 c2 tard, animation du titre h1
+
+[33mcommit 6d65ecc77fe111dfd9f3e1c82c397f501666dde5[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 17 18:33:44 2022 -0400
+
+    animation hover carte
+
+[33mcommit 271c621aa67ce1ec516d93a6c23bc04ff5875d15[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 17 16:19:34 2022 -0400
+
+    clip path sur le header
+
+[33mcommit 6d7e8f377836fa34f6af8dae1d5a385cc4f63d97[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 17 14:52:37 2022 -0400
+
+    widget header + corriger nom des colonne footer
+
+[33mcommit b38b5154d256ae28cc80d0eae753d4aeb47da4a0[m[33m ([m[1;31m4w4/tp1[m[33m, [m[1;31m4w4/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Mar 14 11:02:13 2022 -0400
+
+    s8 c1 WF continuer footer + menu burger
+
+[33mcommit 14ff1f7d160a13c1ff7bf461417613a8b11de2b6[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 10 16:33:57 2022 -0500
+
+    debug sidebar + ajout des widgets footer
+
+[33mcommit 275d81f6f23f818f65eba14276e67b025d76fd15[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 10 14:33:43 2022 -0500
+
+    fonction sidebar avec fichier s'y rapportant
+
+[33mcommit b7bd2e3ba7b4f5fbc58e377ef40fa052438c145e[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Mar 10 14:21:28 2022 -0500
+
+    debut widget footer
+
+[33mcommit cbf4f1c940fcf66b9ef2239200b02b0f8a03f7f7[m[33m ([m[1;32mex2[m[33m)[m
+Author: William Foucher <76762472+willfou193@users.noreply.github.com>
+Date:   Tue Mar 1 13:23:14 2022 -0500
+
+    ajout de lien + couleur modifié
+
+[33mcommit ff8d9d98ec3d9329d8bbc9491a9f7dda8ee3416e[m
+Author: William Foucher <76762472+willfou193@users.noreply.github.com>
+Date:   Tue Mar 1 12:54:58 2022 -0500
+
+    debut hyperlien du titre
+
+[33mcommit ddabf71eb515a9bb9fa61a769025d70ec9198ef9[m
+Author: William Foucher <76762472+willfou193@users.noreply.github.com>
+Date:   Tue Mar 1 12:15:16 2022 -0500
+
+    svg placé correctement
+
+[33mcommit 8fa56da416bc821318155a2fa693996bca3fbc6b[m
+Author: William Foucher <76762472+willfou193@users.noreply.github.com>
+Date:   Mon Feb 28 19:22:45 2022 -0500
+
+    fin du footer responsive, debut icone menu
+
+[33mcommit c0292233e1a4129e9c64da417118e76be24ef2b3[m
+Author: William Foucher <76762472+willfou193@users.noreply.github.com>
+Date:   Mon Feb 28 17:10:13 2022 -0500
+
+    debut footer
+
+[33mcommit e19168e2d11957b6332f521fa771d457ef7b273f[m
+Author: William Foucher <76762472+willfou193@users.noreply.github.com>
+Date:   Mon Feb 28 14:43:47 2022 -0500
+
+    fin Mixin video cours 2
+
+[33mcommit a5aaa1c0b0a626af00f02f7dcf88f054f52f3b3b[m[33m ([m[1;31morigin/ex2[m[33m)[m
+Author: William Foucher <foucher.william1@cmaisonneuve.qc.ca>
+Date:   Mon Feb 28 10:53:08 2022 -0500
+
+    debut mixin
+
+[33mcommit 0086745108e2c6f98823ac52ffb6a01ad94b59fc[m
+Author: William Foucher <foucher.william1@cmaisonneuve.qc.ca>
+Date:   Mon Feb 28 09:50:09 2022 -0500
+
+    barre de recherche
+
+[33mcommit 2b97a0f03de0b86fbc7491a689bcb41837cd72e7[m
+Author: William Foucher <foucher.william1@cmaisonneuve.qc.ca>
+Date:   Mon Feb 28 08:48:33 2022 -0500
+
+    premierCommit

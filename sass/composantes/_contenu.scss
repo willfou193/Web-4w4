@@ -10,6 +10,38 @@
     text-align: center;
     font-size: 2.5rem;
 }
+
+.web{
+    background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
+    background-size: 35px 35px;
+    margin-left: 20px;
+}
+.jeu{
+    background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=gameboy);
+    background-size: 35px 35px;
+    margin-left: 20px;
+    
+}
+.design{
+    background-image: url(https://s2.svgbox.net/materialui.svg?ic=design_services);
+    background-size: 35px 35px;
+    margin-left: 20px;
+}
+.utilitaire{
+    background-image: url(https://s2.svgbox.net/octicons.svg?ic=info);
+    background-size: 35px 35px;
+    margin-left: 20px;
+}
+.video{
+    background-image: url(https://s2.svgbox.net/materialui.svg?ic=videocam);
+    background-size: 35px 35px;
+    margin-left: 20px;
+}
+.creation-3d{
+    background-image: url(https://s2.svgbox.net/materialui.svg?ic=mode_edit);
+    background-size: 35px 35px;
+    margin-left: 20px;
+}
 // css des carte du menu cours---------------------------------------------------------------------------
 .formation {
     display: flex;
@@ -24,28 +56,23 @@
     &__liste {
         display: flex;
         flex-wrap: wrap;
-        .web{
-            background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
-            background-repeat: no-repeat;
-            background-size: 10%;
-            background-position-x: 95%;
-            background-position-y: 15%;
-        }
-        .jeu{}
-        .design{}
-        .utilitaire{}
-        .video{}
-        .creation-3d{}
-        }
+    }
+  
     
-    &__cours {
+    &__cours{
         background-color: $color__background-cours;
+        background-position: 93% 3%;
+        background-repeat: no-repeat;
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
         border-radius: 5px;
         margin: 10px;
         display: flex;
         flex-direction: column;
         width: 100%;
+        & h3{
+            margin-right: 15%;
+        }
+
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
         }

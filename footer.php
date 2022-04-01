@@ -36,7 +36,7 @@
             <h2>Liens externe</h2>
             <?php
                 wp_nav_menu(array(
-                    "menu"=>"externe",
+                    "menu"=>"lien_externe",
                     "link_before"=>$icone));
             ?>
         </div>

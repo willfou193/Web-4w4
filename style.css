@@ -499,6 +499,42 @@ COMPOSANTES
   font-size: 2.5rem;
 }
 
+.web {
+  background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.jeu {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=gameboy);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.design {
+  background-image: url(https://s2.svgbox.net/materialui.svg?ic=design_services);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.utilitaire {
+  background-image: url(https://s2.svgbox.net/octicons.svg?ic=info);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.video {
+  background-image: url(https://s2.svgbox.net/materialui.svg?ic=videocam);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.creation-3d {
+  background-image: url(https://s2.svgbox.net/materialui.svg?ic=mode_edit);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
 .formation {
   display: flex;
   flex-direction: column;
@@ -516,16 +552,10 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 
-.formation__liste .web {
-  background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
-  background-repeat: no-repeat;
-  background-size: 10%;
-  background-position-x: 95%;
-  background-position-y: 15%;
-}
-
 .formation__cours {
   background-color: #eec37d;
+  background-position: 93% 3%;
+  background-repeat: no-repeat;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -533,6 +563,10 @@ COMPOSANTES
   flex-direction: column;
   width: 100%;
   padding: 10px;
+}
+
+.formation__cours h3 {
+  margin-right: 15%;
 }
 
 @media screen and (min-width: 800px) {
@@ -735,17 +769,21 @@ div.icone ul {
 }
 
 .menu-categorie_cours-container {
-  width: 80%;
-  margin: 0 auto 2em auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .menu-categorie_cours-container .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .menu-categorie_cours-container .menu .menu-item {
-  background-color: #F0B04B;
+  background-color: #eec37d;
+  padding: 10px 2%;
+  margin: 0;
+  height: 100%;
+  width: auto;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
@@ -753,11 +791,50 @@ div.icone ul {
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #eec37d;
+  background-color: #A6D5FF;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
   color: lightseagreen;
+}
+
+.conteneur__cours {
+  background-color: #eec37d;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu-menu_accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  width: 15%;
+}
+
+.recherche {
+  position: relative;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.recherche__bouton:active {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.recherche__input {
+  transition: 0.3s ease-in;
+}
+
+.recherche__input:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.recherche__input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .site__footer {
@@ -899,6 +976,7 @@ div.icone ul {
 
 .lien-externe {
   margin: 0 auto;
+  color: white;
 }
 
 .lien-externe h2 {

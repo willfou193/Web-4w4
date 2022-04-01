@@ -1,15 +1,18 @@
 .menu-categorie_cours-container{
-    width: 80%;
-    margin: 0 auto 2em auto;
-    .menu{ //ul
+    width: 90%;
+    margin: 0 auto;
+    & .menu{ //ul
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
        
-        .menu-item { //li
-            background-color: $color__bouton__background;
-            a{
+       & .menu-item { //li
+            background-color: $color__background-cours;
+            padding: 10px 2%;
+            margin: 0;
+            height: 100%;
+            width: auto;
+           & a{
                 color: $color__bouton__color;
-                
             }
             &:hover{
                 background-color: $color__bouton__background--hover;
@@ -19,4 +22,10 @@
             }
         }
     }
+}
+// Menu cours ------------------------------------------------------------
+.conteneur__cours{
+    background-color: $color__background-cours;
+    width: 100%;
+    margin: 0 auto;
 }

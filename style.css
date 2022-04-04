@@ -821,6 +821,10 @@ div.icone ul {
   display: block;
 }
 
+.menu-categorie_cours-container .menu .menu-item a .menu-item-icone {
+  background-repeat: no-repeat;
+}
+
 .recherche {
   position: relative;
   display: flex;

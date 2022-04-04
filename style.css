@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: lab5 William Foucher
+theme name: lab4 William Foucher
 auteur: William Foucher
 Author URL: https://github.com/willfou193
 
@@ -483,6 +483,10 @@ h3, h4, h5 {
   font-family: "Rubik", sans-serif;
 }
 
+a {
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -804,13 +808,17 @@ div.icone ul {
   margin: 0 auto;
 }
 
-.menu-menu_accueil-container .menu {
+.menu-categorie_cours-container .menu {
   display: flex;
-  justify-content: space-around;
 }
 
-.menu-menu_accueil-container .menu .menu-item {
+.menu-categorie_cours-container .menu .menu-item {
   width: 15%;
+  padding: 0;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  display: block;
 }
 
 .recherche {
@@ -874,7 +882,7 @@ div.icone ul {
 @media screen and (min-width: 800px) {
   .site__footer__menu__ul .menu-item {
     width: 50%;
-    margin: 1em;
+    margin: 1em 0px;
   }
 }
 
@@ -957,6 +965,9 @@ div.icone ul {
     width: 30%;
     text-align: center;
     color: white;
+  }
+  .footer__page__menu__ul {
+    padding: 0;
   }
   .footer__page__menu__ul li {
     width: 50%;
@@ -1103,19 +1114,14 @@ theme name: exercice2 William Foucher
   display: grid;
   gap: 0px;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar"
- "header"
- "main"
- "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
     gap: 10px;
-    grid-template-areas: "header header"
- "sidebar main"
- "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 

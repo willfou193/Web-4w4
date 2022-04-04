@@ -28,7 +28,7 @@ function prefix_nav_description( $item_output, $item) {
     }
     return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 3 );
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 /* ---------------------------------------------------------------------- filtré les choix du menu principal */
 function cidw_4w4_filtre_choix_menu($obj_menu){
     //var_dump($obj_menu);

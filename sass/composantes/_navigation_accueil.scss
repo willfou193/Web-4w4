@@ -1,12 +1,13 @@
-.menu-menu_accueil-container { ///nav
+.menu-categorie_cours-container { //div
 
     .menu{//ul
         display: flex;
-        justify-content: space-around;
         .menu-item{ //li
         width: 15%;
+        padding: 0;
         
             a {
+                display: block;
                 .menu-item-description{ //span
 
                 }
@@ -22,11 +23,6 @@
 
 
     }
-
-
-
-
-
 
 
 }

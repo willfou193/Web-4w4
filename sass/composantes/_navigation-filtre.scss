@@ -9,15 +9,33 @@
             background-color: $color__background-cours;
             padding: 10px 2%;
             margin: 0;
-            height: 100%;
             width: auto;
            & a{
                 color: $color__bouton__color;
+                text-align: center;
             }
+            
             &:hover{
                 background-color: $color__bouton__background--hover;
                 a{
                     color: $color__bouton__color--hover;
+                }
+            }
+        }
+        .current-menu-item {
+            background-color: $color__background-cours--current;
+            a{
+                color: $color__bouton__color--current;
+                .menu-item-icone{
+                    display: block;
+                    border: 1px black solid;
+                    box-shadow: 5px 5px 5px $color__boutonAnim__background--hover; 
+                    margin: 10px auto;
+                    background-repeat: no-repeat;
+                    height: 10px;
+                    width: 40px;
+                    background-color: $color__boutonAnim__background--hover;
+                    border-radius: 5px;
                 }
             }
         }

@@ -1,4 +1,4 @@
-.menu-categorie_cours-container { //div
+.menu-accueil-container, .menu-evenement-container, .conteneur__cours { //div
 
     .menu{//ul
         display: flex;
@@ -32,16 +32,10 @@
                 .menu-item-description{ //span
 
                 }
-                .menu-item-icone{
-                    background-repeat: no-repeat;
-                }
-
             }
 
         }
-        & :hover{
-
-        }
+        
 
 
 

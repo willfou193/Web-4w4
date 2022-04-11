@@ -624,6 +624,72 @@ COMPOSANTES
   margin: 0 auto;
 }
 
+.menu__accueil h3 {
+  text-align: center;
+}
+
+.menu__accueil .menu-accueil-container {
+  width: 75%;
+  background-color: #eec37d;
+  margin: 2em auto;
+  border-radius: 20px;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil {
+  margin: 0 auto;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item {
+  flex-grow: 1;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item a {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item:hover {
+  background-color: #A6D5FF;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item:hover a {
+  color: lightseagreen;
+  border-bottom: 2px solid black;
+}
+
+.menu__evenement h3 {
+  text-align: center;
+}
+
+.menu__evenement .menu-evenement-container {
+  width: 75%;
+  background-color: #eec37d;
+  margin: 2em auto;
+  border-radius: 20px;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement {
+  margin: 0 auto;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item {
+  flex-grow: 1;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item a {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item:hover {
+  background-color: #A6D5FF;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item:hover a {
+  color: lightseagreen;
+  border-bottom: 2px solid black;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -709,14 +775,19 @@ div.icone ul {
   justify-content: center;
 }
 
-.menu .menu-item {
+.menu-principal-container .menu .menu-item {
   margin-bottom: 1rem;
 }
 
-.menu .menu-item a {
+.menu-principal-container .menu .menu-item a {
   display: flex;
   align-items: center;
   font-size: 1.2em;
+}
+
+.menu-principal-container .menu .menu-item :hover {
+  color: white;
+  background-color: #66adff;
 }
 
 #burger {
@@ -801,7 +872,6 @@ div.icone ul {
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
   color: lightseagreen;
-  border-bottom: 2px solid black;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
@@ -835,6 +905,10 @@ div.icone ul {
 .conteneur__cours a {
   height: 50%;
   margin: auto auto;
+}
+
+.conteneur__description {
+  text-align: center;
 }
 
 .menu-accueil-container .menu, .menu-evenement-container .menu, .conteneur__cours .menu {
@@ -964,6 +1038,19 @@ div.icone ul {
   .footer__search {
     margin: 2em auto 0 auto;
   }
+}
+
+.footer__search .recherche__input {
+  color: lightseagreen;
+}
+
+.footer__search .recherche__input:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__search .recherche__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer__widget {
@@ -1110,13 +1197,13 @@ theme name: exercice2 William Foucher
     content: "";
     position: absolute;
     width: 100%;
-    height: 75%;
+    height: 100%;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     background-color: #66adff;
-    clip-path: polygon(59% 0, 100% 0%, 100% 72%, 29% 72%);
+    clip-path: polygon(60% 0, 100% 0%, 100% 100%, 0% 100%);
     z-index: 1;
   }
 }

@@ -76,12 +76,18 @@ div.icone{
         }
 }
 // sidebare ----------------------------------------------------------
-.menu .menu-item{
-    margin-bottom: 1rem;
-    & a{
-        display: flex;
-        align-items: center;
-        font-size: 1.2em;
-        
-    } 
+.menu-principal-container{
+    .menu .menu-item{ //li
+        margin-bottom: 1rem;
+        & a{
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+            
+        } 
+        & :hover{
+            color: white;
+            background-color: $color__background-link-hover;
+        }
+    }
 }

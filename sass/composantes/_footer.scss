@@ -64,6 +64,18 @@
   @media screen and (min-width : $largeur__media--tablette){
     margin: 2em auto 0 auto;
   }
+  .recherche{
+    &__input{
+      color: $color__link-hover;
+      &:hover{
+          cursor: pointer;
+          background-color: rgba(#fff,0.4);
+      }
+      &:focus{
+          background-color: rgba(#fff,0.3);
+      }
+  }
+  }
 }
 .footer__widget{
   @include conteneurFlexCol;

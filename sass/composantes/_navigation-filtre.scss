@@ -1,4 +1,4 @@
-.menu-categorie_cours-container{
+.menu-categorie_cours-container{//div
     width: 90%;
     margin: 0 auto;
     & .menu{ //ul
@@ -17,11 +17,10 @@
                 
             }
             
-            &:hover{
+            &:hover{ //li
                 background-color: $color__bouton__background--hover;
                 a{
                     color: $color__bouton__color--hover;
-                    border-bottom: 2px solid black;
                 }
             }
         }
@@ -55,4 +54,8 @@
         height: 50%;
         margin: auto auto;
     }
+}
+// description --------------------------------------------------------------
+.conteneur__description{
+    text-align: center;
 }

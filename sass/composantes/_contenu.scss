@@ -10,7 +10,7 @@
     text-align: center;
     font-size: 2.5rem;
 }
-
+// ---------------------------SVG DANS LE COIN DES CARTES-----------------------------------
 .web{
     background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
     background-size: 35px 35px;
@@ -119,4 +119,66 @@
 }
 .animation{
     margin: 0 auto;
+}
+// Menu-accueil 
+.menu__accueil{//div
+    & h3{
+        text-align: center;
+    }
+    .menu-accueil-container{//nav
+        width: 75%;
+        background-color: $color__background-cours;
+        margin: 2em auto;
+        border-radius: 20px;
+        #menu-accueil{//ul
+            margin: 0 auto;
+
+            .menu-item{//li
+                flex-grow: 1;
+                & a{
+                    margin: 0 auto;
+                    width: max-content;
+                }
+                &:hover{ //li
+                    background-color: $color__bouton__background--hover;
+                    a{
+                        color: $color__bouton__color--hover;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
+//menu-evenement
+.menu__evenement{//div
+    & h3{
+        text-align: center;
+    }
+    .menu-evenement-container{//nav
+        width: 75%;
+        background-color: $color__background-cours;
+        margin: 2em auto;
+        border-radius: 20px;
+        #menu-evenement{//ul
+            margin: 0 auto;
+            .menu-item{//li
+                flex-grow: 1;
+                & a{
+                    margin: 0 auto;
+                    width: max-content;
+                }
+                &:hover{ //li
+                    background-color: $color__bouton__background--hover;
+                    a{
+                        color: $color__bouton__color--hover;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+        }
+    
+    }
+
+
 }

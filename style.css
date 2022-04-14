@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*
-theme name: lab4 William Foucher
+theme name: exercice3 William Foucher
 auteur: William Foucher
 Author URL: https://github.com/willfou193
 
-Description: Remise du TP1 Développer un site constitué de plusieurs modèles qui permettront d’afficher dans un design original les pages suivantes : un page d'accueil personnalisée, un page de l'ensemble des cours du TIM, un pied de page (footer) et un entête. 
+Description: Front page avec un menu d'accueil et un menu d'événement ainsi qu'un filtre de cours classant les cours selon des catégories spécifique.
 
 Version: 1.0.0
 

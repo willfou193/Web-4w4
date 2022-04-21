@@ -708,7 +708,7 @@ COMPOSANTES
   padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
   font-size: clamp(2rem, 4vw, 6rem);
   color: black;
-  font-family: "Merriweather", serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .site__header__titre h2 {
@@ -1183,12 +1183,12 @@ section.erreur-404 {
   border: 3px solid red;
   width: 50vw;
   height: 50vh;
-  transform: scale(0.1);
+  transform: scale(0);
   transition: all 0.5s ease-in;
   z-index: 2;
 }
 
-.boite__modale:hover {
+.ouvrir {
   transform: scale(1);
 }
 

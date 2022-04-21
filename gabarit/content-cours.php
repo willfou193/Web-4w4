@@ -11,7 +11,7 @@
                         $nbHeures = get_field( "nombre_dheures" );
                         $departement = get_field( "departement" );
                         $sigleCours = substr($titre, 0, 4);
-                        $descCours = wp_trim_words(get_the_content(),15,"<a herf='#'> Lire la suite... </a>");
+                        $descCours = wp_trim_words(get_the_content(),15,"<button class='cours__desc__ouvrir' > Lire la suite... </button>");
                         ?>
                         <?php the_post_thumbnail("thumbnail"); ?>
                         <?php get_permalink(); ?>

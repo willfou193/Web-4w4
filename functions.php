@@ -121,14 +121,16 @@ function my_register_sidebars() {
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-    if(is_admin() || !is_main_query() || !is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu')))
+    if(is_admin() 
+                || !$query->is_main_query()
+                || !$query->is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu')))
     {
         return $query;
     }   
     else
     {
-        $ordre = get_query_var('ordre');
-        $cle = get_query_var('cletri');
+        $ordre = get_query_var('ordre','asc');
+        $cle = get_query_var('cletri','title');
         $query->set('order',  $ordre);
         $query->set('orderby', $cle);
         

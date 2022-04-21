@@ -1,17 +1,12 @@
 @charset "UTF-8";
-/*
-theme name: exercice3 William Foucher
-auteur: William Foucher
-Author URL: https://github.com/willfou193
-
-Description: Front page avec un menu d'accueil et un menu d'événement ainsi qu'un filtre de cours classant les cours selon des catégories spécifique.
-
+/**
+theme name: exercice4 William Foucher
+Author: William Foucher
+Author URI: https://github.com/willfou193
+Description: Exercice #4 Front page avec un menu d'accueil et un menu d'événement ainsi qu'un filtre de cours classant les cours selon des catégories spécifique.
 Version: 1.0.0
-
 License: GNU General Public License v2 or later
-
 License URI: LICENSE
-
 Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
@@ -476,7 +471,7 @@ p {
 }
 
 h1, h2 {
-  font-family: "Merriweather", serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h3, h4, h5 {
@@ -484,7 +479,7 @@ h3, h4, h5 {
 }
 
 a {
-  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-size: clamp(1.4rem, 1vw, 1.8rem);
 }
 
 /* ---------------------------------------------------------
@@ -1176,6 +1171,27 @@ section.erreur-404 {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.evenement__resume {
+  background-color: lightgreen;
+}
+
+.boite__modale {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background-color: blue;
+  border: 3px solid red;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0.1);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+
+.boite__modale:hover {
+  transform: scale(1);
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -1185,6 +1201,7 @@ theme name: exercice2 William Foucher
 .site {
   background-color: white;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  position: relative;
 }
 
 .site__header {

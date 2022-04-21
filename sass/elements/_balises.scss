@@ -15,12 +15,12 @@ p{
 }
 
 h1, h2{
-    font-family: $font_principale;
+    font-family: $font_secondaire;
 }
 h3,h4,h5{
     font-family: $font_secondaire;
 }
 
 a{
-    font-size: clamp(1rem, 1vw, 1.2rem);
+    font-size: clamp(1.4rem, 1vw, 1.8rem);
 }

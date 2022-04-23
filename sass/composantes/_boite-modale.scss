@@ -1,19 +1,25 @@
 .boite__modale{
     position:fixed;
+    display: flex;
+    flex-direction: column;
     top: 25%;
     left: 25%;
-    background-color: blue;
-    border: 3px solid red;
+    background-color:hsl(212, 100%, 70%);
     width: 50vw;
     height: 50vh;
     transform: scale(0);
     transition: all 0.5s ease-in;
     z-index: 2;
     &__fermeture{
-
+        width: 20%;
+        margin: 20px auto;
+        border: none;
+        background-color:#F0B04B;
     }
     &__texte{
-
+        width: 80%;
+        margin: 5% auto 0 auto;
+        color:black;
     }
 }
 .ouvrir{

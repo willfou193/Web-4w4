@@ -51,10 +51,14 @@
 </footer>
 
     <div class="boite__modale">
-        <button class="boite__modale__fermeture">X</button>
-        <p class="boite__modale__texte">
-            Ceci est un premier test de boite modale 
-        </p>
+        <section class="boite__modale__texte">
+            <?php if(have_posts()):the_post(); ?>
+            <?php the_title(); ?>
+            <?php the_content(); ?>
+            <?php endif; ?>
+        </section>
+        
+        <button class="boite__modale__fermeture">Fermer</button>
     </div>
     <?php wp_footer(); ?>
 </body>

@@ -1,6 +1,7 @@
 (function(){
     let boite__modale = document.querySelector(".boite__modale");
     let cours__desc__ouvrir = document.querySelectorAll('.cours__desc__ouvrir');
+    let boutonFerme = document.querySelector(".boite__modale__fermeture");
 
     for(const bouton of cours__desc__ouvrir){
         bouton.addEventListener('mousedown',function(){
@@ -9,4 +10,7 @@
             //remove pour ferme la boite
         })
     }
+    boutonFerme.addEventListener('mousedown',function(){
+        boite__modale.classList.remove('ouvrir'); 
+    })
 })()

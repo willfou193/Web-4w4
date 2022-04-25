@@ -25,7 +25,7 @@
     $manager->add_setting( "background_body",
 
                             [   "default" => "black",
-
+#                                                                                                                                                                                                                                                                                                                                                                                                                                                       
                                 "sanitize_callback"=> "sanitize_hex_color" // permet de valider/filtrer la donnée
 
                             ]);

@@ -52,10 +52,7 @@
 
     <div class="boite__modale">
         <section class="boite__modale__texte">
-            <?php if(have_posts()):the_post(); ?>
-            <?php the_title(); ?>
-            <?php the_content(); ?>
-            <?php endif; ?>
+            
         </section>
         
         <button class="boite__modale__fermeture">Fermer</button>

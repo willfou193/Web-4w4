@@ -2,24 +2,35 @@
     position:fixed;
     display: flex;
     flex-direction: column;
-    top: 25%;
-    left: 25%;
     background-color:hsl(212, 100%, 70%);
-    width: 50vw;
+    width: 100vw;
     height: 50vh;
+    top: 25%;
     transform: scale(0);
     transition: all 0.5s ease-in;
-    z-index: 2;
+    z-index: 10;
+    overflow-y: scroll;
     &__fermeture{
         width: 20%;
         margin: 20px auto;
         border: none;
         background-color:#F0B04B;
+        &:hover{
+            -webkit-box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.69); 
+            box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.69);
+            color:$color__link__footer-hover;
+        }
     }
     &__texte{
         width: 80%;
         margin: 5% auto 0 auto;
         color:black;
+        font-size: clamp(15px, 2em, 1.2rem);
+    }
+    @media screen and (min-width : $largeur__media--tablette){
+        width: 50vw;
+        height: 50vh;
+        left: 25%;
     }
 }
 .ouvrir{

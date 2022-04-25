@@ -102,6 +102,14 @@
 .cours__description {
     font-size: 1rem;
 }
+.cours__desc__ouvrir{
+    background-color:$color__background-cours;
+    border: none;
+    &:hover{
+        background-color:$color__background-header;
+        transition: 1s;
+    }
+}
 // -----------------------------------------------------background image des cercle anime menu principal------------------------
 .animation__bloc{
     background-image: url(https://www.cmaisonneuve.qc.ca/wp-content/uploads/2020/06/favicon-cm.jpg);

@@ -800,11 +800,7 @@ div.icone ul {
 }
 
 #burger {
-  position: absolute;
-  right: 20px;
-  top: 30px;
-  transition: transform .3s;
-  transform: rotate(0);
+  display: block;
 }
 
 @media screen and (min-width: 800px) {
@@ -815,10 +811,6 @@ div.icone ul {
 
 #chk-burger {
   display: none;
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
 }
 
 .menu-principal-container {
@@ -1422,5 +1414,51 @@ ANIMATION
   100% {
     opacity: 1;
   }
+}
+
+.burger {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 20px;
+  right: 0;
+  background-color: black;
+  border-radius: 25%;
+  overflow: hidden;
+}
+
+.burger .burger__ligne {
+  border-radius: 25%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+}
+
+.burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 /*# sourceMappingURL=style.css.map */

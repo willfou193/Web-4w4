@@ -1,4 +1,118 @@
-[33mcommit 3fca33ad6406d4a4e8283f9e8ccdf6ecf005c3b4[m[33m ([m[1;36mHEAD -> [m[1;32mtp1[m[33m, [m[1;31morigin/tp1[m[33m)[m
+[33mcommit a20c855e4ae4c468ea39d2d2264fa3913b02b7e0[m[33m ([m[1;36mHEAD -> [m[1;32mtp2[m[33m, [m[1;31morigin/tp2[m[33m)[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Apr 28 14:01:58 2022 -0400
+
+    mise a jour de la description
+
+[33mcommit 072db61b9b36d26a06eeb25e16823800d86084a0[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 25 16:12:54 2022 -0400
+
+    s12 ajout barre de scroll + css boite modale
+
+[33mcommit c4eba9dc28ecba9b20f6ec6bb7e64dd6a79bd03a[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 25 10:56:32 2022 -0400
+
+    s13 c1 fin du cours apparence et header
+
+[33mcommit b38854f735e265e13fc71abed5b29bae818e6cee[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 25 10:14:34 2022 -0400
+
+    s13 c1, boite modale et customizer
+
+[33mcommit c0e58eb55eda211b130bd6047e82b11c5239d5d4[m[33m ([m[1;31morigin/lab6[m[33m)[m
+Author: William Foucher <e1938665@cmaisonneuve.qc.ca>
+Date:   Sat Apr 23 01:43:50 2022 -0400
+
+    s12 c2 fin de la boite modale
+
+[33mcommit e48afed05ae9ba400a4d6d34198ef452fca691d0[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Apr 21 16:37:57 2022 -0400
+
+    fin du cours semaine 12 c2
+
+[33mcommit a0d35313ee675e6dfd8070991ecab2c75b65b732[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Apr 21 15:54:14 2022 -0400
+
+    s12 c2 pause: ajout javascript debut
+
+[33mcommit cabe74c8a87f549f8af0cfb148921111f61975a0[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Apr 21 15:22:35 2022 -0400
+
+    s12 c2, première étape de la boite modale
+
+[33mcommit fea96f7094fd7782fa436a5912724e23742be661[m[33m ([m[1;31morigin/ex4[m[33m, [m[1;32mex4[m[33m)[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Thu Apr 14 14:20:01 2022 -0400
+
+    s11 c1 début du cours
+
+[33mcommit 1b4e88583cd3c7468da9438adb904da0ca0cbd13[m[33m ([m[1;31morigin/exercice3[m[33m, [m[1;32mexercice3[m[33m)[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 11 16:15:10 2022 -0400
+
+    Fin menu front-page + barre de recherche footer fixed
+
+[33mcommit 72f3618d41c3e5ed6424877a0e5545e4a10e7a17[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 11 14:48:00 2022 -0400
+
+    nette amélioration du menu cours/filtre
+
+[33mcommit 8cd7b1ff6b4c26dacd079da8d8aea1a69fa5a1f4[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 11 10:57:06 2022 -0400
+
+    s11 c1 wp
+
+[33mcommit 43d5625c761124666feac71aab045d549d9b6c0d[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Fri Apr 8 13:42:03 2022 -0400
+
+    debut css menu filtre + fin cours lundi semaine 10
+
+[33mcommit cf6db804050ce217f12ca02d9ddcb4cc39c9f942[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 4 11:04:09 2022 -0400
+
+    semaine 10 c1 fin du cours : function ordre de présentation des cours
+
+[33mcommit c511d9a86f010006dc5a08e1de1fd0d114e80580[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 4 10:01:40 2022 -0400
+
+    semaine 10 c1, background image fix + nom des class ajustés. Content-cours ajout php qui marchait pas
+
+[33mcommit 32246bc5e25d92e9acc453d2be79cafb1c656d5e[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Apr 4 09:19:09 2022 -0400
+
+    semaine 10 c1, menu cours  + function mis a jour
+
+[33mcommit 38a423d6898c76f3c11c0fdb371fd0a525a688c9[m[33m ([m[1;31morigin/lab5[m[33m, [m[1;32mlab5[m[33m, [m[1;32mcheckout[m[33m)[m
+Author: William Foucher <e1938665@cmaisonneuve.qc.ca>
+Date:   Fri Apr 1 21:51:06 2022 -0400
+
+    nom de la version
+
+[33mcommit 55ef4ef2a8afbb423dc93ce73f3098f1e391227d[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Fri Apr 1 15:50:34 2022 -0400
+
+    cours vendredi semaine 9
+
+[33mcommit 76b33a18484e6bc7dc049e70447a2797f01a0a19[m
+Author: William Foucher <foucher.william1@gmail.com>
+Date:   Mon Mar 28 10:53:00 2022 -0400
+
+    semaine9 cours1 filtre icone et balises.php
+
+[33mcommit 3fca33ad6406d4a4e8283f9e8ccdf6ecf005c3b4[m[33m ([m[1;31morigin/tp1[m[33m, [m[1;32mtp1[m[33m)[m
 Author: William Foucher <foucher.william1@gmail.com>
 Date:   Fri Mar 18 17:38:49 2022 -0400
 

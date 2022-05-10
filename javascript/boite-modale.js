@@ -10,6 +10,7 @@
             boite__modale.classList.add('ouvrir');
             boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
             //remove pour ferme la boite
+            //test
         })
     }
     boutonFerme.addEventListener('mousedown',function(){

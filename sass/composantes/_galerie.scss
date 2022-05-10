@@ -1,9 +1,11 @@
 // Galerie gutenberg de la page d'accueil
 .galerie{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
     @media screen and (min-width : $largeur__media--tablette)
     {
-        width: 75%;
+        width: 100%;
     }
     
 }

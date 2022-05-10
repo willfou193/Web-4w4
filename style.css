@@ -485,6 +485,18 @@ a {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+.galerie {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 100%;
+  }
+}
+
 .principal {
   margin: 20px;
   padding: 10px 15px;
@@ -1181,7 +1193,7 @@ section.erreur-404 {
   background-color: lightgreen;
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -1195,19 +1207,20 @@ section.erreur-404 {
   overflow-y: scroll;
 }
 
-.boite__modale__fermeture {
-  width: 20%;
-  margin: 20px auto;
-  border: none;
-  background-color: #F0B04B;
+.boite__modale__fermeture, .boite__carrousel__fermeture {
+  z-index: 11;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: grey;
 }
 
-.boite__modale__fermeture:hover {
+.boite__modale__fermeture:hover, .boite__carrousel__fermeture:hover {
   box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.69);
   color: lightseagreen;
 }
 
-.boite__modale__texte {
+.boite__modale__texte, .boite__carrousel__texte {
   width: 80%;
   margin: 5% auto 0 auto;
   color: black;
@@ -1215,7 +1228,7 @@ section.erreur-404 {
 }
 
 @media screen and (min-width: 800px) {
-  .boite__modale {
+  .boite__modale, .boite__carrousel {
     width: 50vw;
     height: 50vh;
     left: 25%;
@@ -1224,6 +1237,43 @@ section.erreur-404 {
 
 .ouvrir {
   transform: scale(1);
+}
+
+.boite__carrousel {
+  width: 75vw;
+  height: 75vh;
+  top: 12.5%;
+  left: 12.5%;
+  overflow: hidden;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 12;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  margin: 15px 10px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
 }
 
 /* ---------------------------------------------------------

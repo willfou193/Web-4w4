@@ -55,6 +55,13 @@
 		outline: 0;
 	}
 }
+@mixin conteneurFlexCol{
+	width: 100%;
+	margin: 0 auto;
+	@media screen and (min-width : $largeur__media--tablette){
+		width: 30%;
+	}
+}
 
 // ========================================================
 

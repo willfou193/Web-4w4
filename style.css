@@ -1,6 +1,13 @@
 @charset "UTF-8";
-/*
-theme name: lab4 William Foucher
+/**
+theme name: exercice4 William Foucher
+Author: William Foucher
+Author URI: https://github.com/willfou193/Web-4w4
+Description: L'exercice 4 couvrait en autre les filtres, templates amélioration générale.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -358,11 +365,11 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: black;
+  color: white;
 }
 
 .site__footer a:visited {
-  color: black;
+  color: #999999;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -443,9 +450,53 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+h3, h4, h5 {
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  font-size: clamp(1.4rem, 1vw, 1.8rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+.galerie {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 100%;
+  }
+}
+
 .principal {
   margin: 20px;
   padding: 10px 15px;
@@ -457,6 +508,42 @@ COMPOSANTES
 .site__main h1 {
   text-align: center;
   font-size: 2.5rem;
+}
+
+.web {
+  background-image: url(https://s2.svgbox.net/hero-outline.svg?ic=globe-alt);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.jeu {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=gameboy);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.design {
+  background-image: url(https://s2.svgbox.net/materialui.svg?ic=design_services);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.utilitaire {
+  background-image: url(https://s2.svgbox.net/octicons.svg?ic=info);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.video {
+  background-image: url(https://s2.svgbox.net/materialui.svg?ic=videocam);
+  background-size: 35px 35px;
+  margin-left: 20px;
+}
+
+.creation-3d {
+  background-image: url(https://s2.svgbox.net/materialui.svg?ic=mode_edit);
+  background-size: 35px 35px;
+  margin-left: 20px;
 }
 
 .formation {
@@ -477,7 +564,9 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #eec37d;
+  background-position: 93% 3%;
+  background-repeat: no-repeat;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -485,6 +574,14 @@ COMPOSANTES
   flex-direction: column;
   width: 100%;
   padding: 10px;
+}
+
+.formation__cours h3 {
+  margin-right: 15%;
+}
+
+.formation__cours__invisible {
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -515,6 +612,105 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.cours__desc__ouvrir {
+  background-color: #eec37d;
+  border: none;
+}
+
+.cours__desc__ouvrir:hover {
+  background-color: #F0B04B;
+  transition: 1s;
+}
+
+.animation__bloc {
+  background-image: url(https://www.cmaisonneuve.qc.ca/wp-content/uploads/2020/06/favicon-cm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 24px 3px #F0B04B;
+}
+
+#etudiant {
+  background-image: url(https://www.td.com/ca/fr/services-bancaires-personnels/images/15.1-student_lineof_credit_benefits-mb_tcm343-299184.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cours {
+  background-image: url(https://www.radiogaspesie.ca/wp-content/uploads/livres-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animation {
+  margin: 0 auto;
+}
+
+.menu__accueil h3 {
+  text-align: center;
+}
+
+.menu__accueil .menu-accueil-container {
+  width: 75%;
+  background-color: #eec37d;
+  margin: 2em auto;
+  border-radius: 20px;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil {
+  margin: 0 auto;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item {
+  flex-grow: 1;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item a {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item:hover {
+  background-color: #A6D5FF;
+}
+
+.menu__accueil .menu-accueil-container #menu-accueil .menu-item:hover a {
+  color: lightseagreen;
+  border-bottom: 2px solid black;
+}
+
+.menu__evenement h3 {
+  text-align: center;
+}
+
+.menu__evenement .menu-evenement-container {
+  width: 75%;
+  background-color: #eec37d;
+  margin: 2em auto;
+  border-radius: 20px;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement {
+  margin: 0 auto;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item {
+  flex-grow: 1;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item a {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item:hover {
+  background-color: #A6D5FF;
+}
+
+.menu__evenement .menu-evenement-container #menu-evenement .menu-item:hover a {
+  color: lightseagreen;
+  border-bottom: 2px solid black;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -538,6 +734,7 @@ COMPOSANTES
   padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
   font-size: clamp(2rem, 4vw, 6rem);
   color: black;
+  font-family: "Rubik", sans-serif;
 }
 
 .site__header__titre h2 {
@@ -553,6 +750,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 3;
 }
 
 @media screen and (min-width: 800px) {
@@ -563,34 +761,26 @@ COMPOSANTES
   }
 }
 
-.icone {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
+div.icone {
+  width: 100%;
 }
 
-@media screen and (min-width: 800px) {
-  .icone {
-    display: block;
-    width: auto;
-    margin: 0%;
-  }
-}
-
-.icone__lien {
-  text-decoration: none;
+div.icone ul {
+  justify-content: space-around;
+  gap: 0em;
 }
 
 .recherche {
+  margin-bottom: 3px;
   position: relative;
+  width: 100%;
 }
 
 .recherche__input {
   width: 100%;
   border: none;
   outline: none;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .recherche__bouton {
@@ -598,23 +788,31 @@ COMPOSANTES
   right: 0;
   border: none;
   outline: none;
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.menu .menu-item a {
+.menu-principal-container .menu .menu-item {
+  margin-bottom: 1rem;
+}
+
+.menu-principal-container .menu .menu-item a {
   display: flex;
   align-items: center;
+  font-size: 1.2em;
+}
+
+.menu-principal-container .menu .menu-item :hover {
+  color: white;
+  background-color: #66adff;
 }
 
 #burger {
-  position: absolute;
-  transition: transform .3s;
-  transform: rotate(0);
+  display: block;
 }
 
 @media screen and (min-width: 800px) {
@@ -623,8 +821,8 @@ COMPOSANTES
   }
 }
 
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
+#chk-burger {
+  display: none;
 }
 
 .menu-principal-container {
@@ -658,41 +856,149 @@ COMPOSANTES
   padding: 4px;
 }
 
+.menu-categorie_cours-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  background-color: #eec37d;
+  padding: 0px 2%;
+  margin: 0;
+  width: auto;
+  flex-grow: 1;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: black;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #A6D5FF;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: lightseagreen;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #F0B04B;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  display: inline-block;
+  color: lightseagreen;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a .menu-item-icone {
+  border: 1px black solid;
+  box-shadow: 2px 2px 2px #424242;
+  margin: 10px auto;
+  background-repeat: no-repeat;
+  height: 6px;
+  width: 40px;
+  background-color: #424242;
+  border-radius: 3px;
+}
+
+.conteneur__cours {
+  display: flex;
+  background-color: #eec37d;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.conteneur__cours a {
+  height: 50%;
+  margin: auto auto;
+}
+
+.conteneur__description {
+  text-align: center;
+}
+
+.menu-accueil-container .menu, .menu-evenement-container .menu, .conteneur__cours .menu {
+  display: flex;
+}
+
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .conteneur__cours .menu .menu-item {
+  width: 15%;
+  padding: 0;
+}
+
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a, .conteneur__cours .menu .menu-item a {
+  display: block;
+}
+
+.recherche {
+  position: relative;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.recherche__bouton:active {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.recherche__input {
+  transition: 0.3s ease-in;
+}
+
+.recherche__input:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.recherche__input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #000000;
   padding: 15px;
 }
 
-@media screen and (min-width: 800px) {
-  .site__footer__menu {
-    width: 30%;
-  }
+.site__footer__menu {
+  padding: 0px;
+  width: 100%;
+  margin: 0%;
 }
 
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
+  flex-direction: row;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
   .site__footer__menu__ul {
-    flex-flow: nowrap;
+    justify-content: flex-start;
+    flex-flow: wrap;
     flex-direction: column;
     width: 100%;
+    height: 16rem;
   }
 }
 
 .site__footer__menu__ul .menu-item {
-  width: 25%;
-  margin: 12.5%;
+  width: 33%;
 }
 
 @media screen and (min-width: 800px) {
   .site__footer__menu__ul .menu-item {
-    width: 100%;
-    margin: 1em;
+    width: 50%;
+    margin: 1em 0px;
   }
 }
 
@@ -718,25 +1024,10 @@ COMPOSANTES
   text-align: center;
 }
 
-.footer__search {
-  width: 90%;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 800px) {
-  .footer__search {
-    width: 20%;
-  }
-}
-
-#footer__copyright {
-  color: white;
-  font-size: 0.7rem;
-}
-
 .footer__conteneur {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 @media screen and (min-width: 800px) {
@@ -745,24 +1036,132 @@ COMPOSANTES
   }
 }
 
-.footer__presentation {
+.footer__search {
   width: 100%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 800px) {
-  .footer__presentation {
+  .footer__search {
     width: 30%;
   }
 }
 
-section.erreur-404 {
-  width: 50%;
-  margin: 0 auto;
+@media screen and (min-width: 800px) {
+  .footer__search {
+    margin: 2em auto 0 auto;
+  }
 }
 
-.article__contenu {
-  width: 95%;
+.footer__search .recherche__input {
+  color: lightseagreen;
+}
+
+.footer__search .recherche__input:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__search .recherche__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__widget {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__widget {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer__widget ul {
+    padding-left: 1rem;
+  }
+}
+
+.footer__page {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__page {
+    width: 30%;
+    text-align: center;
+    color: white;
+  }
+  .footer__page__menu__ul {
+    padding: 0;
+  }
+  .footer__page__menu__ul li {
+    width: 50%;
+  }
+}
+
+.footer__conteneur__2 {
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__conteneur__2 {
+    flex-direction: row;
+  }
+}
+
+.lien-externe {
+  margin: 0 auto;
+  color: white;
+}
+
+.lien-externe h2 {
+  color: white;
+  text-align: center;
+}
+
+.lien-externe svg {
+  color: #F0B04B;
+}
+
+@media screen and (min-width: 800px) {
+  .lien-externe {
+    width: 40%;
+    margin: 0px;
+    text-align: center;
+  }
+  .lien-externe li {
+    width: 50%;
+    margin: 2em auto;
+  }
+  .lien-externe a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.reseau {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .reseau {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+#footer__copyright {
+  color: white;
+  font-size: 0.7rem;
+}
+
+section.erreur-404 {
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -786,6 +1185,97 @@ section.erreur-404 {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.recherche__input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.evenement__resume {
+  background-color: lightgreen;
+}
+
+.boite__modale, .boite__carrousel {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #66adff;
+  width: 100vw;
+  height: 50vh;
+  top: 25%;
+  transform: scale(0);
+  transition: all 0.5s ease-in;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.boite__modale__fermeture, .boite__carrousel__fermeture {
+  z-index: 11;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: grey;
+}
+
+.boite__modale__fermeture:hover, .boite__carrousel__fermeture:hover {
+  box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.69);
+  color: lightseagreen;
+}
+
+.boite__modale__texte, .boite__carrousel__texte {
+  width: 80%;
+  margin: 5% auto 0 auto;
+  color: black;
+  font-size: clamp(15px, 2em, 1.2rem);
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale, .boite__carrousel {
+    width: 50vw;
+    height: 50vh;
+    left: 25%;
+  }
+}
+
+.ouvrir {
+  transform: scale(1);
+}
+
+.boite__carrousel {
+  width: 75vw;
+  height: 75vh;
+  top: 12.5%;
+  left: 12.5%;
+  overflow: hidden;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 12;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  margin: 15px 10px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -794,7 +1284,8 @@ theme name: exercice2 William Foucher
 */
 .site {
   background-color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  position: relative;
 }
 
 .site__header {
@@ -802,24 +1293,43 @@ theme name: exercice2 William Foucher
   background-color: #F0B04B;
 }
 
+@media screen and (min-width: 800px) {
+  .site__header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #66adff;
+    clip-path: polygon(60% 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+  }
+}
+
 .site__barre {
   grid-area: sidebar;
   background-color: #A6D5FF;
+  z-index: 1;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #A6D5FF;
+  background-color: #a6d5ff;
+  z-index: 1;
 }
 
 .site__footer {
   grid-area: footer;
   background-color: #000000;
+  z-index: 1;
 }
 
 .site {
   display: grid;
-  gap: 10px;
+  gap: 0px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
@@ -827,6 +1337,7 @@ theme name: exercice2 William Foucher
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
+    gap: 10px;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
@@ -835,6 +1346,7 @@ theme name: exercice2 William Foucher
 ANIMATION
 --------------------------------------------------------- */
 .animation {
+  /* page d'accueil*/
   display: none;
 }
 
@@ -843,7 +1355,7 @@ ANIMATION
     display: flex;
     width: 90%;
     margin-bottom: 1rem;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 
@@ -858,15 +1370,145 @@ ANIMATION
   border-radius: 50%;
   color: black;
   transform: translateX(0) translateY(0);
-  animation: animCercle 1s 1s backwards ease-in;
+  animation: animCercle 1s 1s backwards ease-out;
+}
+
+.animation div:nth-child(2) {
+  margin-right: clamp(15%, 30%, 60%);
+  margin-left: clamp(15%, 30%, 60%);
+}
+
+.formation__cours:hover {
+  transform: scale(1.05);
+  animation-name: animBackground;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.site__header__titre h1 {
+  animation-name: titreApparition;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+.site__header__titre h2 {
+  animation-name: descriptionApparition;
+  animation-duration: 6s;
+  animation-timing-function: ease-in;
 }
 
 @keyframes animCercle {
   0% {
     transform: translateY(-100vw);
   }
+  50% {
+    transform: translateY(20vw);
+  }
+  75% {
+    transform: translateY(-20vw);
+  }
   100% {
     transform: translateX(0) translateY(0);
   }
+}
+
+@keyframes animBackground {
+  0% {
+    box-shadow: 0px 10px 24px 3px #F0F0F0;
+  }
+  25% {
+    box-shadow: 0px 10px 24px 3px #222EF0;
+  }
+  50% {
+    box-shadow: 0px 10px 24px 3px #F07F7F;
+  }
+  75% {
+    box-shadow: 0px 10px 24px 3px #000000;
+  }
+  100% {
+    box-shadow: 0px 10px 24px 3px #F0F0F0;
+  }
+}
+
+@keyframes titreApparition {
+  0% {
+    transform: translateY(15vh);
+  }
+  30% {
+    transform: translateY(8vh);
+  }
+  80% {
+    transform: translateY(15vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes descriptionApparition {
+  0% {
+    transform: translateX(100vh);
+  }
+  90% {
+    transform: translateX(100vh);
+  }
+  100% {
+    transform: translateX(0vh);
+  }
+}
+
+@keyframes sousLienOpacite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.burger {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 20px;
+  right: 0;
+  background-color: black;
+  border-radius: 25%;
+  overflow: hidden;
+}
+
+.burger .burger__ligne {
+  border-radius: 25%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+}
+
+.burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 /*# sourceMappingURL=style.css.map */

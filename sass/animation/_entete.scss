@@ -1,10 +1,10 @@
-.animation{
+.animation{ /* page d'accueil*/
     display: none;
     @media screen and (min-width : $largeur__media--tablette){
         display: flex;
         width: 90%;
         margin-bottom: 1rem;
-        justify-content: space-around;
+        justify-content: center;
     }
     &__bloc{
         display: flex;
@@ -17,38 +17,96 @@
         border-radius: 50%;
         color: black;
         transform: translateX(0) translateY(0);
-        animation: animCercle 1s 1s backwards ease-in ;
+        animation: animCercle 1s 1s backwards ease-out ;
     }
+}
+.animation div:nth-child(2){
+    margin-right:clamp(15%, 30%, 60%);
+    margin-left:clamp(15%, 30%, 60%);
+}
+.formation__cours:hover{
+    transform: scale(1.05);
+    animation-name: animBackground;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+// éléments du titre
+.site__header__titre h1{
+    animation-name: titreApparition;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+.site__header__titre h2{
+    animation-name: descriptionApparition;
+    animation-duration: 6s;
+    
+    animation-timing-function: ease-in;
+}
 
-    // &__bloc:nth-of-type(1){
-    //     transform: translateX(-100vw);
-    //     transition: transform .05s 3s;
-    //     
-    // }
-    // &__bloc:nth-of-type(2){
-    //     transform: translateX(-100vw);
-    //     transition: transform .05s 3s;
-    // }
-    // &__bloc:nth-of-type(3){
-    //     transform: translateY(-100vh);
-    //     transition: transform .05s 3s;
-    // }
-    // &__bloc:nth-of-type(4){
-    //     transform: translateX(100vw);
-    //     transition: transform .05s 3s;
-    // }
-    // &__bloc:nth-of-type(5){
-    //     transform: translateX(100vw);
-    //     transition: transform .05s 3s;
-    // }
 
+
+    //---------------------------------ANIMATIONS----------------------------------------
     @keyframes animCercle{
         0%{
             transform:translateY(-100vw);
+        }
+        50%{
+            transform:translateY(20vw);
+        }
+        75%{
+            transform:translateY(-20vw);
         }
         100%{
             transform:translateX(0) translateY(0);
         }
     }
+    @keyframes animBackground{
+        0%{
+            -webkit-box-shadow: 0px 10px 24px 3px #F0F0F0; 
+box-shadow: 0px 10px 24px 3px #F0F0F0;
+        }
+        25%{
+            -webkit-box-shadow: 0px 10px 24px 3px #222EF0; 
+box-shadow: 0px 10px 24px 3px #222EF0;
+        }
+        50%{
+            -webkit-box-shadow: 0px 10px 24px 3px #F07F7F; 
+box-shadow: 0px 10px 24px 3px #F07F7F;
+        }
+        75%{
+            -webkit-box-shadow: 0px 10px 24px 3px #000000; 
+box-shadow: 0px 10px 24px 3px #000000;
+        }
+        100%{
+            -webkit-box-shadow: 0px 10px 24px 3px #F0F0F0; 
+box-shadow: 0px 10px 24px 3px #F0F0F0;
+        }
+    }
 
-}
+    @keyframes titreApparition{
+        0%{
+            transform:translateY(15vh);
+        }
+        30%{
+            transform:translateY(8vh);
+        }
+        80%{
+            transform:translateY(15vh);
+        }
+        100%{
+            transform:translateY(0vh);
+        }
+    }
+
+    @keyframes descriptionApparition{
+        0%{
+            transform:translateX(100vh);
+        }
+        90%{
+            transform:translateX(100vh);
+        }
+        100%{
+            transform:translateX(0vh);
+        }
+    }

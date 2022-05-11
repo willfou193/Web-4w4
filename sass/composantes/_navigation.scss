@@ -1,15 +1,15 @@
 
 #burger {
-    position : absolute;
-    transition : transform .3s;
-    transform : rotate(0);
+    display: block;
     @media screen and (min-width : $largeur__media--tablette){
         display: none;
     }
 }
-
+#chk-burger {
+    display: none;
+}
 #chk-burger:checked ~ #burger {
-    transform : rotate(90deg);
+    
 }
 .menu-principal-container {
     display : none;

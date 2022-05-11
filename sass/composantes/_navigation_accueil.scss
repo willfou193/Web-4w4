@@ -1,0 +1,45 @@
+.menu-accueil-container, .menu-evenement-container, .conteneur__cours { //div
+
+    .menu{//ul
+        display: flex;
+
+        .accueil__web{//li
+
+        }
+        .accueil__jeu{//li
+
+        }
+        .accueil__creation-3d{//li
+
+        }
+        .accueil__video{//li
+
+        }
+        .accueil__design{//li
+
+        }
+        .accueil__util{//li
+
+        }
+
+
+        .menu-item{ //li
+        width: 15%;
+        padding: 0;
+        
+            a {
+                display: block;
+                .menu-item-description{ //span
+
+                }
+            }
+
+        }
+        
+
+
+
+    }
+
+
+}

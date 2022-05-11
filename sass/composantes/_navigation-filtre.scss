@@ -1,0 +1,60 @@
+.menu-categorie_cours-container{//div
+    width: 90%;
+    margin: 0 auto;
+    & .menu{ //ul
+        display: flex;
+       
+       & .menu-item { //li
+            background-color: $color__background-cours;
+            padding: 0px 2%;
+            margin: 0;
+            width: auto;
+            flex-grow: 1;
+           & a{
+                color: $color__bouton__color;
+                text-align: center;
+                padding: 10px 0px;
+            }
+            
+            &:hover{ //li
+                background-color: $color__bouton__background--hover;
+                a{
+                    color: $color__bouton__color--hover;
+                }
+            }
+        }
+        .current-menu-item {
+            background-color: $color__background-cours--current;
+            a{
+                display: inline-block;
+                color: $color__bouton__color--current;
+                .menu-item-icone{
+                    border: 1px black solid;
+                    box-shadow: 2px 2px 2px $color__boutonAnim__background--hover; 
+                    margin: 10px auto;
+                    background-repeat: no-repeat;
+                    height: 6px;
+                    width: 40px;
+                    background-color: $color__boutonAnim__background--hover;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+// Menu cours ------------------------------------------------------------
+.conteneur__cours{
+    display: flex;
+    background-color: $color__background-cours;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    & a{
+        height: 50%;
+        margin: auto auto;
+    }
+}
+// description --------------------------------------------------------------
+.conteneur__description{
+    text-align: center;
+}

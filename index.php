@@ -1,6 +1,5 @@
 <?php get_header() ?>
 <main class="site__main">
-    <h1>--------------INDEX.php-------------</h1>
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">

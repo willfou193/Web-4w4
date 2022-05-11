@@ -1,5 +1,12 @@
-/*
-theme name: lab4 William Foucher
+/**
+theme name: exercice4 William Foucher
+Author: William Foucher
+Author URI: https://github.com/willfou193/Web-4w4
+Description: L'exercice 4 couvrait en autre les filtres, templates amélioration générale.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -18,17 +25,23 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balises";
 
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+@import "composantes/galerie";
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation-filtre";
+@import "composantes/navigation_accueil";
+@import "composantes/recherche";
 @import "composantes/footer";
 @import "composantes/404";
-@import "composantes/cours";
 @import "composantes/recherche";
+@import "composantes/evenement";
+@import "composantes/boite-modale";
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -37,3 +50,5 @@ LAYOUT
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
+@import "animation/menu";
+@import "animation/burger";

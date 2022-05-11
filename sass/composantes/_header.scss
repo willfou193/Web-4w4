@@ -3,78 +3,91 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
   @media screen and (min-width : $largeur__media--tablette)
    {
        flex-direction: row;
    }
   &__titre{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      
-      h1{
-          padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
-          font-size: clamp(2rem, 4vw, 6rem);
-          color: $color__link;
-      }
-      h2{
-          font-size: clamp(1rem, 2vw, 3rem);
-          color: $color__link;
-      }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h1{
+            padding: 0 clamp(1rem, 2vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem);
+            font-size: clamp(2rem, 4vw, 6rem);
+            color: $color__link;
+            font-family: $font_secondaire;
+        }
+        h2{
+            font-size: clamp(1rem, 2vw, 3rem);
+            color: $color__link;
+            
+        }
   }
   &__titre a{
       text-decoration: none;
   }
 }
+// section qui englobe les icones--------------------------------------------------------
 .util{
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 3;
+  
   @media screen and (min-width : $largeur__media--tablette) {
       align-items: flex-end;
       width: 25%;
       margin-right: 10px;
+      
   }
 
 }
-.icone{
-  margin: 0 auto;
-  display: flex;
-  justify-content:space-between;
-  width: 80%;
-  @media screen and (min-width : $largeur__media--tablette) {
-      display: block;
-      width: auto;
-      margin: 0%;
-  }
-  &__lien{
-      text-decoration: none;
-  }
+div.icone{
+    width: 100%;
+    & ul{
+        justify-content: space-around;
+        gap: 0em;
+    }
 }
+//  barre de recherche-----------------------------------------------------
 .recherche{
-  position: relative;
-  &__input{
-      width: 100%;
-      border: none;
-      outline: none;
-      line-height: 1.5;
-  
-  }
-  &__bouton{
-      top: 0;
-      right: 0;
-      border: none;
-      outline: none;
-      width: 23px;
-      height: 23px;
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+    margin-bottom: 3px;
+    position: relative;
+    width: 100%;
+        &__input{
+            width: 100%;
+            border: none;
+            outline: none;
+            line-height: 1.4;
+        
+        }
+        &__bouton{
+            top: 0;
+            right: 0;
+            border: none;
+            outline: none;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 }
-
-.menu .menu-item a{
-    display: flex;
-    align-items: center;
+// sidebare ----------------------------------------------------------
+.menu-principal-container{
+    .menu .menu-item{ //li
+        margin-bottom: 1rem;
+        & a{
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+            
+        } 
+        & :hover{
+            color: white;
+            background-color: $color__background-link-hover;
+        }
+    }
 }

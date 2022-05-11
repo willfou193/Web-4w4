@@ -1,21 +1,22 @@
 /* ---------------- BACKGROUND */
 $color__background-body : hsl(0, 0%, 100%);
+$color__background-body-clip : hsl(212, 100%, 70%);
 $color__background-main : #A6D5FF;
-$color__background-cours : hsl(7, 100%, 91%);
+$color__background-cours : #eec37d;
 $color__background-header : #F0B04B;
 $color__background-barre : #A6D5FF;
 $color__background-footer : #000000;
 $color__background-link : #F0B04B;
-$color__background-link-hover : hsl(0, 100%, 91%);
+$color__background-link-hover : hsl(212, 100%, 70%);
 
 /* ---------------- LIENS */
 $color__link : hsl(0, 0%, 0%);
 $color__link-hover : lightseagreen;
 $color__link-visited : hsl(0, 0%, 0%);
 /* ---------------- LIENS FOOTER */
-$color__link__footer : hsl(0, 0%, 0%);
+$color__link__footer : hsl(0, 0%, 100%);
 $color__link__footer-hover : lightseagreen;
-$color__link__footer-visited : hsl(0, 0%, 0%);
+$color__link__footer-visited : hsl(0, 0%, 60%); 
 
 
 /* ---------------- FONT */
@@ -45,3 +46,12 @@ $color__link__menu__principal-hover: green;
 $background__link__menu__princiapl:lightGreen;
 $background__link__menu__princiapl-visited: lightGreen;
 $background__link__menu__princiapl-hover:lightGreen;
+
+// -----------------------------Bouton lien Menu filtre
+$color__bouton__color: black;
+$color__bouton__background:#F0B04B;
+$color__bouton__color--current: lightseagreen;
+$color__background-cours--current:#F0B04B;
+$color__bouton__color--hover:lightseagreen;
+$color__bouton__background--hover:#A6D5FF;
+$color__boutonAnim__background--hover:rgb(66, 66, 66);

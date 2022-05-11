@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying all single posts
+ * Template Name: Annonce
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package _underscore
+ * @package WordPress
+ * @subpackage cidw_4w4
  */
 
 get_header();

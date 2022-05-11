@@ -51,11 +51,13 @@
 </footer>
 
     <div class="boite__modale">
-        <section class="boite__modale__texte">
-            
-        </section>
-        
+        <section class="boite__modale__texte"></section>
         <button class="boite__modale__fermeture">Fermer</button>
+    </div>
+
+    <div class="boite__carrousel">
+        <section class="boite__carrousel__navigation"></section>
+        <button class="boite__carrousel__fermeture">X</button>
     </div>
     <?php wp_footer(); ?>
 </body>

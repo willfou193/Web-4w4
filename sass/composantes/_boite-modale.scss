@@ -1,4 +1,4 @@
-.boite__modale{
+.boite__modale, .boite__carrousel{
     position:fixed;
     display: flex;
     flex-direction: column;
@@ -11,10 +11,11 @@
     z-index: 10;
     overflow-y: scroll;
     &__fermeture{
-        width: 20%;
-        margin: 20px auto;
-        border: none;
-        background-color:#F0B04B;
+        z-index: 11;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: grey;
         &:hover{
             -webkit-box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.69); 
             box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.69);
@@ -27,6 +28,7 @@
         color:black;
         font-size: clamp(15px, 2em, 1.2rem);
     }
+    
     @media screen and (min-width : $largeur__media--tablette){
         width: 50vw;
         height: 50vh;
@@ -35,4 +37,39 @@
 }
 .ouvrir{
     transform: scale(1);
+}
+
+.boite__carrousel{
+    
+    width: 75vw;
+    height: 75vh;
+    top: 12.5%;
+    left: 12.5%;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__navigation{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        z-index: 12;
+        button{
+            width: 20px;
+            height: 20px;
+            margin: 15px 10px;
+            border-radius: 100%;
+            &:focus{
+                background-color: black;
+            }
+        }
+
+    }
 }

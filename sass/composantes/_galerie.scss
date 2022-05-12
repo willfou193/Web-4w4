@@ -3,9 +3,10 @@
     display: flex;
     justify-content: center;
     width: 90%;
+    margin: 0 auto;
     @media screen and (min-width : $largeur__media--tablette)
     {
-        width: 100%;
+        width: clamp(80%, 90%, 100%);
     }
     
 }

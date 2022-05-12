@@ -1,12 +1,15 @@
 .burger{
     position: absolute;
-    width: 2rem;
-    height: 2rem;
-    top: 20px;
-    right:0;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 30px;
+    right:15px;
     background-color: black;
     border-radius: 25%;
     overflow: hidden;
+    &:hover{
+        cursor: pointer;
+    }
     
     .burger__ligne{
         border-radius: 25%;

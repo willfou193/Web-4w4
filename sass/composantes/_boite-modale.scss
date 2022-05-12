@@ -1,3 +1,4 @@
+.boite__modale__texte::-webkit-scrollbar { width: 0 !important }
 .boite__modale, .boite__carrousel{
     position:fixed;
     display: flex;
@@ -9,7 +10,6 @@
     transform: scale(0);
     transition: all 0.5s ease-in;
     z-index: 10;
-    overflow-y: scroll;
     &__fermeture{
         z-index: 11;
         position: absolute;
@@ -28,7 +28,9 @@
         margin: 5% auto 0 auto;
         color:black;
         font-size: clamp(15px, 2em, 1.2rem);
+        overflow-y: scroll;
     }
+    
     
     @media screen and (min-width : $largeur__media--tablette){
         width: 50vw;
@@ -36,6 +38,7 @@
         left: 25%;
     }
 }
+
 .ouvrir{
     transform: scale(1);
 }
@@ -76,10 +79,10 @@
         width: 100%;
         bottom: 0;
         z-index: 12;
-        .button{
-            width: 20px;
-            height: 20px;
-            margin: 15px 10px;
+        input{
+            width: 16px;
+            height: 16px;
+            margin: 15px 6px;
             border-radius: 100%;
             &:focus{
                 background-color: black;

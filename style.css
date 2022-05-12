@@ -496,6 +496,10 @@ COMPOSANTES
   }
 }
 
+.galerie figure figcaption {
+  display: none;
+}
+
 .principal {
   margin: 20px;
   padding: 10px 15px;
@@ -619,6 +623,18 @@ COMPOSANTES
 .cours__desc__ouvrir:hover {
   background-color: #F0B04B;
   transition: 1s;
+}
+
+.article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.article__contenu p {
+  line-height: 30px;
+  font-size: 1.20em;
+  border-bottom: 2px solid white;
+  padding: 1em;
 }
 
 .animation__bloc {
@@ -925,16 +941,15 @@ div.icone ul {
 
 .menu-accueil-container .menu, .menu-evenement-container .menu, .conteneur__cours .menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .conteneur__cours .menu .menu-item {
-  width: 15%;
   padding: 0;
 }
 
 .menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a, .conteneur__cours .menu .menu-item a {
   display: block;
-  font-size: clamp(0.3em, 1em, 1.2em);
 }
 
 .recherche {
@@ -1193,6 +1208,10 @@ section.erreur-404 {
   background-color: lightgreen;
 }
 
+.boite__modale__texte::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 .boite__modale, .boite__carrousel {
   position: fixed;
   display: flex;
@@ -1204,7 +1223,6 @@ section.erreur-404 {
   transform: scale(0);
   transition: all 0.5s ease-in;
   z-index: 10;
-  overflow-y: scroll;
 }
 
 .boite__modale__fermeture, .boite__carrousel__fermeture {
@@ -1226,6 +1244,7 @@ section.erreur-404 {
   margin: 5% auto 0 auto;
   color: black;
   font-size: clamp(15px, 2em, 1.2rem);
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 800px) {
@@ -1281,14 +1300,14 @@ section.erreur-404 {
   z-index: 12;
 }
 
-.boite__carrousel__navigation .button {
-  width: 20px;
-  height: 20px;
-  margin: 15px 10px;
+.boite__carrousel__navigation input {
+  width: 16px;
+  height: 16px;
+  margin: 15px 6px;
   border-radius: 100%;
 }
 
-.boite__carrousel__navigation .button:focus {
+.boite__carrousel__navigation input:focus {
   background-color: black;
 }
 
@@ -1484,13 +1503,17 @@ ANIMATION
 
 .burger {
   position: absolute;
-  width: 2rem;
-  height: 2rem;
-  top: 20px;
-  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 30px;
+  right: 15px;
   background-color: black;
   border-radius: 25%;
   overflow: hidden;
+}
+
+.burger:hover {
+  cursor: pointer;
 }
 
 .burger .burger__ligne {
@@ -1526,5 +1549,9 @@ ANIMATION
 
 #chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
+.galerie figure:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

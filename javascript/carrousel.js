@@ -34,9 +34,6 @@
 
         console.log(img.tagName)
         img.addEventListener('mousedown',function(){
-            for(const img of galerie_img){
-                boite__carrousel__img.children.classList.remove('img--ouvrir')
-            }
             // console.log(this.getAttribute);
             // boite__carrousel__img.forEach( boite__carrousel__img.children[img.dataset.index].classList.remove('img--ouvrir'))
             boite__carrousel.classList.add('ouvrir');

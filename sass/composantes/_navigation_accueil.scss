@@ -21,15 +21,13 @@
         .accueil__util{//li
 
         }
-
-
         .menu-item{ //li
         width: 15%;
         padding: 0;
         
             a {
                 display: block;
-                font-size: max(1.5em) min(0.7em);
+                font-size:clamp(0.3em, 1em, 1.2em);
                 .menu-item-description{ //span
 
                 }

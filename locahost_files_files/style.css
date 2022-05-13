@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /**
-theme name: exercice4 William Foucher
+theme name: TP2 William Foucher
 Author: William Foucher
-Author URI: https://github.com/willfou193/Web-4w4
-Description: L'exercice 4 couvrait en autre les filtres, templates amélioration générale.
+Author URI: https://github.com/willfou193/Web-4w4/tree/lab6
+Description: Le fruit de mes efforts lors du cours de 4w4 en web créer avec l'aide de WordPress. Ce dernier thème contient maintenat un carrousel, un adaptabilité en format mobile et quelques améiorations générals.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -456,11 +456,12 @@ h1 {
 
 h2 {
   font-size: 2.5em;
-  margin: 0 auto;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.7em;
+  text-align: center;
 }
 
 h4 {
@@ -479,10 +480,6 @@ h3, h4, h5 {
   font-family: "Rubik", sans-serif;
 }
 
-a {
-  font-size: clamp(1.4rem, 1vw, 1.8rem);
-}
-
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -497,6 +494,10 @@ COMPOSANTES
   .galerie {
     width: clamp(80%, 90%, 100%);
   }
+}
+
+.galerie figure figcaption {
+  display: none;
 }
 
 .principal {
@@ -624,6 +625,18 @@ COMPOSANTES
   transition: 1s;
 }
 
+.article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.article__contenu p {
+  line-height: 30px;
+  font-size: 1.20em;
+  border-bottom: 2px solid white;
+  padding: 1em;
+}
+
 .animation__bloc {
   background-image: url(https://www.cmaisonneuve.qc.ca/wp-content/uploads/2020/06/favicon-cm.jpg);
   background-repeat: no-repeat;
@@ -711,6 +724,10 @@ COMPOSANTES
 .menu__evenement .menu-evenement-container #menu-evenement .menu-item:hover a {
   color: lightseagreen;
   border-bottom: 2px solid black;
+}
+
+.recherche {
+  margin: 0 2em;
 }
 
 .site__header {
@@ -928,16 +945,15 @@ div.icone ul {
 
 .menu-accueil-container .menu, .menu-evenement-container .menu, .conteneur__cours .menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .conteneur__cours .menu .menu-item {
-  width: 15%;
   padding: 0;
 }
 
 .menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a, .conteneur__cours .menu .menu-item a {
   display: block;
-  font-size: 1.5em 0.7em;
 }
 
 .recherche {
@@ -1192,8 +1208,25 @@ section.erreur-404 {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.evenement__resume {
-  background-color: lightgreen;
+.evenement p {
+  font-size: 1.2em;
+}
+
+.evenement {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.evenementimg {
+  margin: 0 auto;
+}
+
+.evenementh1 {
+  border-bottom: white solid 2px;
+}
+
+.boite__modale__texte::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 .boite__modale, .boite__carrousel {
@@ -1207,20 +1240,20 @@ section.erreur-404 {
   transform: scale(0);
   transition: all 0.5s ease-in;
   z-index: 10;
-  overflow-y: scroll;
 }
 
 .boite__modale__fermeture, .boite__carrousel__fermeture {
   z-index: 11;
   position: absolute;
+  border-radius: 50%;
   top: 10px;
   left: 10px;
-  background-color: grey;
+  background-color: white;
 }
 
 .boite__modale__fermeture:hover, .boite__carrousel__fermeture:hover {
   box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.69);
-  color: lightseagreen;
+  background-color: #66adff;
 }
 
 .boite__modale__texte, .boite__carrousel__texte {
@@ -1228,6 +1261,7 @@ section.erreur-404 {
   margin: 5% auto 0 auto;
   color: black;
   font-size: clamp(15px, 2em, 1.2rem);
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 800px) {
@@ -1250,13 +1284,28 @@ section.erreur-404 {
   overflow: hidden;
 }
 
-.boite__carrousel img {
+.boite__carrousel__img {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.boite__carrousel__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+.boite__carrousel__img img.img--ouvrir {
+  opacity: 1;
 }
 
 .boite__carrousel__navigation {
@@ -1268,14 +1317,14 @@ section.erreur-404 {
   z-index: 12;
 }
 
-.boite__carrousel__navigation button {
-  width: 20px;
-  height: 20px;
-  margin: 15px 10px;
+.boite__carrousel__navigation input {
+  width: 16px;
+  height: 16px;
+  margin: 15px 6px;
   border-radius: 100%;
 }
 
-.boite__carrousel__navigation button:focus {
+.boite__carrousel__navigation input:focus {
   background-color: black;
 }
 
@@ -1334,14 +1383,19 @@ theme name: exercice2 William Foucher
   display: grid;
   gap: 0px;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar"
+ "header"
+ "main"
+ "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
     gap: 10px;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header"
+ "sidebar main"
+ "footer footer";
   }
 }
 
@@ -1471,13 +1525,17 @@ ANIMATION
 
 .burger {
   position: absolute;
-  width: 2rem;
-  height: 2rem;
-  top: 20px;
-  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 30px;
+  right: 15px;
   background-color: black;
   border-radius: 25%;
   overflow: hidden;
+}
+
+.burger:hover {
+  cursor: pointer;
 }
 
 .burger .burger__ligne {
@@ -1513,5 +1571,9 @@ ANIMATION
 
 #chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
+.galerie figure:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

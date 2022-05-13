@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /**
-theme name: exercice4 William Foucher
+theme name: TP2 William Foucher
 Author: William Foucher
-Author URI: https://github.com/willfou193/Web-4w4
-Description: L'exercice 4 couvrait en autre les filtres, templates amélioration générale.
+Author URI: https://github.com/willfou193/Web-4w4/lab6
+Description: Le fruit de mes efforts lors du cours de 4w4 en web créer avec l'aide de WordPress. Ce dernier thème contient maintenat un carrousel, un adaptabilité en format mobile et quelques améiorations générals.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -726,6 +726,10 @@ COMPOSANTES
   border-bottom: 2px solid black;
 }
 
+.recherche {
+  margin: 0 2em;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -1204,8 +1208,21 @@ section.erreur-404 {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.evenement__resume {
-  background-color: lightgreen;
+.evenement p {
+  font-size: 1.2em;
+}
+
+.evenement {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.evenementimg {
+  margin: 0 auto;
+}
+
+.evenementh1 {
+  border-bottom: white solid 2px;
 }
 
 .boite__modale__texte::-webkit-scrollbar {

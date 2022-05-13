@@ -25,11 +25,7 @@ get_header();
             the_field('heure');
             ?>
         </p>
-        <p id="evenemnt__endroit">
-            <?php
-            the_field('endroit');
-            ?>
-        </p>
+        <p id="evenemnt__endroit"><?php the_field('endroit');?></p>
         
         <p id="evenemnt__organisateur">
             <?php

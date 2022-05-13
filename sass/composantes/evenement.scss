@@ -1,12 +1,14 @@
+.evenement p{
+    font-size: 1.2em;
+    
+}
 .evenement{
-    h1{
-
+    width: 90%;
+    margin: 0 auto;
+    &img{
+        margin: 0 auto;
     }
-    &__endroit{
-
+    &h1{
+        border-bottom: white solid 2px;
     }
-    &__resume{
-        background-color: lightgreen;
-    }
-
 }

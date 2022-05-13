@@ -1,4 +1,17 @@
-.evenement__resume {
-  background-color: lightgreen;
+.evenement p {
+  font-size: 1.2em;
+}
+
+.evenement {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.evenementimg {
+  margin: 0 auto;
+}
+
+.evenementh1 {
+  border-bottom: white solid 2px;
 }
 /*# sourceMappingURL=evenement.css.map */

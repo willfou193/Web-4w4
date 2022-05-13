@@ -3,7 +3,8 @@
 ### Date de remise : 13 mai 2022
 
 ```
-Version finale de mon site WordPress réalisé dans le cadre du cours 4W4.
+Version finale de mon site WordPress réalisé dans le cadre du cours 4W4. Merci pour ce cours qui me sera bien pratique pour mon stage
+cet été!
 
 Github page : https://github.com/willfou193/Web-4w4.git
 

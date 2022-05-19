@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Évenement
+ * Template Name: Atelier
  *
  *
  * @package WordPress
@@ -17,29 +17,48 @@ get_header();
         <h2>Description de l'atelier</h2>
         <p class="evenement__animateur">
             <?php
-            the_field('date');
+            the_field('animateur');
             ?>
         </p>
-        <p class="evenemnt__local">
+        <p class="evenement__local">
             <?php
-            the_field('date');
-            ?>
-            <?php
-            the_field('heure');
+            the_field('local_ou_se_deroulera_latelier');
             ?>
         </p>
-        <p class="evenemnt__resume"><?php the_field('endroit');?></p>
+        <p class="evenement__resume">
+            <?php the_field('description');?>
+        </p>
         
         <h2>Horaire et dates de l'atelier</h2>
-        <p class="evenemnt__duree">
+        <p class="evenement__duree">
             <?php
-            the_field('organisateur'); 
+            the_field('duree_dune_seance_datelier'); 
             ?>
         </p>
-       <p class="evenement__debut"></p>
-       <p class="evenement__fin"></p>
-       <p class="evenement__jours"></p>
-       <p class="evenement__horaire"></p>
+       <p class="evenement__debut">
+            <?php    
+            the_field('date_de_debut_de_latelier'); 
+            ?>
+       </p>
+       <p class="evenement__fin">
+             <?php    
+            the_field('date_de_fin_de_latelier'); 
+            ?>
+       </p>
+       <p class="evenement__jours">
+             <?php    
+            the_field('jours_de_la_semaine_de_latelier'); 
+            ?>
+       </p>
+       <p class="evenement__horaire">
+            <?php    
+            the_field('heure_de_debut'); 
+            ?>
+            <p> à </p>
+            <?php    
+            the_field('heure_de_fin'); 
+            ?>
+       </p>
 
         <?php endif; ?>
     </article>

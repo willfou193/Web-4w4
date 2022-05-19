@@ -485,6 +485,7 @@ COMPOSANTES
 --------------------------------------------------------- */
 .contenuField {
   font-weight: bold;
+  align-items: center;
 }
 
 .evenement__animateur, .evenement__local, .evenement__duree, .evenement__debut, .evenement__fin, .evenement__jours, .evenement__horaire {
@@ -492,9 +493,12 @@ COMPOSANTES
   flex-direction: row;
 }
 
-.atelier h1 {
-  text-align: start;
+.atelier {
   margin-left: 1em;
+}
+
+.atelier h3 {
+  text-align: start;
 }
 
 .galerie {

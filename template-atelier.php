@@ -25,7 +25,7 @@ get_header();
             <div class="contenuField"><?php the_field('description');?>
         </section>
         
-        <h2>Horaire et dates de l'atelier</h2>
+        <h3>Horaire et dates de l'atelier</h3>
         <section class="evenement__duree">
             <p>Durée de chacune des séances est de <div class="contenuField"><?php the_field('duree_dune_seance_datelier'); ?></div></p>
         </section>

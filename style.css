@@ -2,7 +2,7 @@
 /**
 theme name: TP2 William Foucher
 Author: William Foucher
-Author URI: https://github.com/willfou193/Web-4w4/tree/lab6
+Author URI: https://github.com/willfou193/Web-4w4/lab6
 Description: Le fruit de mes efforts lors du cours de 4w4 en web créer avec l'aide de WordPress. Ce dernier thème contient maintenat un carrousel, un adaptabilité en format mobile et quelques améiorations générals.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -483,6 +483,20 @@ h3, h4, h5 {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+.contenuField {
+  font-weight: bold;
+}
+
+.evenement__animateur, .evenement__local, .evenement__duree, .evenement__debut, .evenement__fin, .evenement__jours, .evenement__horaire {
+  display: flex;
+  flex-direction: row;
+}
+
+.atelier h1 {
+  text-align: start;
+  margin-left: 1em;
+}
+
 .galerie {
   display: flex;
   justify-content: center;
@@ -1383,19 +1397,14 @@ theme name: exercice2 William Foucher
   display: grid;
   gap: 0px;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar"
- "header"
- "main"
- "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
     gap: 10px;
-    grid-template-areas: "header header"
- "sidebar main"
- "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 

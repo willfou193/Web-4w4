@@ -1,3 +1,11 @@
 .contenuField{
     font-weight: bold;
 }
+.evenement__animateur, .evenement__local, .evenement__duree, .evenement__debut, .evenement__fin, .evenement__jours, .evenement__horaire{
+    display: flex;
+    flex-direction: row;
+}
+.atelier h1{
+    text-align: start;
+    margin-left: 1em;
+}

@@ -21,7 +21,7 @@ theme name: exercice2 William Foucher
 //     background-color: $color__background-body-clip;
 //     clip-path: circle(50% at 50% 50%);
 //     z-index: -1;
-// }
+// } 
 
 .site__header{
     grid-area: header;  
@@ -50,6 +50,7 @@ theme name: exercice2 William Foucher
     grid-area: sidebar;
     background-color: $color__background-barre;
     z-index: 1;
+    //
 }
 
 .site__main{

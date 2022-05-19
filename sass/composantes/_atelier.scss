@@ -1,6 +1,8 @@
 .contenuField{
     font-weight: bold;
     align-items: center;
+    padding-left: 10px;
+    padding-top: 15px;
 }
 .evenement__animateur, .evenement__local, .evenement__duree, .evenement__debut, .evenement__fin, .evenement__jours, .evenement__horaire{
     display: flex;
@@ -12,3 +14,35 @@
 .atelier h3{
     text-align: start;
 }
+.evenement__horaire .contenuField{
+    display: flex;
+}
+
+
+// CSS de la page d'accueil
+.menu-atelier-container{
+    width: 90%;
+    margin: 0 auto;
+    #menu-atelier{
+        display: flex;
+        .menu-item{
+            background-color: $color__background-cours;
+            padding: 0px 2%;
+            margin: 0;
+            width: auto;
+            flex-grow: 1;
+            & a{
+                color: $color__bouton__color;
+                text-align: center;
+                padding: 10px 0px;
+            }
+            &:hover{ //li
+                background-color: $color__bouton__background--hover;
+                a{
+                    color: $color__bouton__color--hover;
+                }
+            }
+        }
+    }
+}
+

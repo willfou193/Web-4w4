@@ -486,6 +486,8 @@ COMPOSANTES
 .contenuField {
   font-weight: bold;
   align-items: center;
+  padding-left: 10px;
+  padding-top: 15px;
 }
 
 .evenement__animateur, .evenement__local, .evenement__duree, .evenement__debut, .evenement__fin, .evenement__jours, .evenement__horaire {
@@ -499,6 +501,41 @@ COMPOSANTES
 
 .atelier h3 {
   text-align: start;
+}
+
+.evenement__horaire .contenuField {
+  display: flex;
+}
+
+.menu-atelier-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu-atelier-container #menu-atelier {
+  display: flex;
+}
+
+.menu-atelier-container #menu-atelier .menu-item {
+  background-color: #eec37d;
+  padding: 0px 2%;
+  margin: 0;
+  width: auto;
+  flex-grow: 1;
+}
+
+.menu-atelier-container #menu-atelier .menu-item a {
+  color: black;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.menu-atelier-container #menu-atelier .menu-item:hover {
+  background-color: #A6D5FF;
+}
+
+.menu-atelier-container #menu-atelier .menu-item:hover a {
+  color: lightseagreen;
 }
 
 .galerie {
